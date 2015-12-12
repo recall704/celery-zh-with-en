@@ -7,5 +7,6 @@
    * [Getting Started](getting_started.md)
        * [Introduction to Celery](introduction_to_celery.md)
        * [Brokers](brokers.md)
+           * Broker Instructions
 * [Indices and tables](indices_and_tables.md)
 
