@@ -17,7 +17,7 @@
        * [Brokers](brokers.md)
            * [Broker Instructions](broker_instructions.md)
                * Using RabbitMQ
-               * Using Redis
+               * [Using Redis](using_redis.md)
            * Experimental Transports
        * First Steps with Celery
        * Next Steps
