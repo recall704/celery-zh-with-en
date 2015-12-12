@@ -276,4 +276,8 @@ The following bundles are available:
 **celery[sqlalchemy]:**
  	for using SQLAlchemy as a message transport (experimental), or as a result backend (supported).  
 **celery[pyro]:**	for using the Pyro4 message transport (experimental).  
-**celery[slmq]:**	for using the SoftLayer Message Queue transport (experimental).
+**celery[slmq]:**	for using the SoftLayer Message Queue transport (experimental).  
+
+
+## Downloading and installing from source
+
