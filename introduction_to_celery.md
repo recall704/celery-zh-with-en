@@ -239,23 +239,26 @@ $ pip install "celery[librabbitmq]"
 $ pip install "celery[librabbitmq,redis,auth,msgpack]"
 ```
 The following bundles are available:  
-**Serializers**  
-**celery[auth]:	**for using the auth serializer.  
-**celery[msgpack]:**for using the msgpack serializer.  
-**celery[yaml]:**	for using the yaml serializer.  
 
-Concurrency
-celery[eventlet]:
- 	for using the eventlet pool.
-celery[gevent]:	for using the gevent pool.
-celery[threads]:
- 	for using the thread pool.
-Transports and Backends
-celery[librabbitmq]:
- 	for using the librabbitmq C library.
-celery[redis]:	for using Redis as a message transport or as a result backend.
-celery[mongodb]:
- 	for using MongoDB as a message transport (experimental), or as a result backend (supported).
+### Serializers
+
+**celery[auth]:	**   for using the auth serializer.  
+**celery[msgpack]:** for using the msgpack serializer.  
+**celery[yaml]:**	 for using the yaml serializer.  
+
+
+### Concurrency
+
+**celery[eventlet]:** for using the eventlet pool.  
+**celery[gevent]:**	  for using the gevent pool.  
+**celery[threads]:**  for using the thread pool.  
+
+
+### Transports and Backends
+
+**celery[librabbitmq]:** for using the librabbitmq C library.  
+celery[redis]:for using Redis as a message transport or as a result backend.  
+celery[mongodb]:for using MongoDB as a message transport (experimental), or as a result backend (supported).
 celery[sqs]:	for using Amazon SQS as a message transport (experimental).
 celery[memcache]:
  	for using memcached as a result backend.
