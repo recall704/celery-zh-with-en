@@ -226,3 +226,15 @@ To install using easy_install,:
 ```bash
 $ easy_install -U Celery
 ```
+
+
+## Bundles
+
+Celery also defines a group of bundles that can be used to install Celery and the dependencies for a given feature.
+
+You can specify these in your requirements or on the pip comand-line by using brackets. Multiple bundles can be specified by separating them by commas.
+```
+$ pip install "celery[librabbitmq]"
+
+$ pip install "celery[librabbitmq,redis,auth,msgpack]"
+```
