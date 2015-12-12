@@ -12,7 +12,7 @@
            * [Celery is…](celery_is.md)
            * [Features](features.md)
            * [Framework Integration](framework_integration.md)
-           * Quickjump
+           * [Quickjump](quickjump.md)
        * [Brokers](brokers.md)
            * Broker Instructions
            * Experimental Transports
