@@ -15,8 +15,8 @@
            * [Quickjump](quickjump.md)
            * [Installation](installation.md)
        * [Brokers](brokers.md)
-           * Using Redis
            * [Broker Instructions](broker_instructions.md)
+               * Using Redis
                * Using RabbitMQ
            * Experimental Transports
        * First Steps with Celery
