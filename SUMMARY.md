@@ -10,4 +10,5 @@
    * Contributing
    * Community Resources
    * Tutorials
+   * Frequently Asked Questions
 
