@@ -6,6 +6,7 @@
    * [Copyright](copyright.md)
    * [Getting Started](getting_started.md)
        * [Introduction to Celery](introduction_to_celery.md)
+           * What is a Task Queue?
        * [Brokers](brokers.md)
            * Broker Instructions
            * Experimental Transports
