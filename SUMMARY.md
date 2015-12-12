@@ -4,6 +4,5 @@
 * [Celery](celery.md)
 * [Contents](contents.md)
    * Copyright
-   * Copyright
 * [Indices and tables](indices_and_tables.md)
 
