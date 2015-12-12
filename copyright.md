@@ -24,4 +24,4 @@ Ask Solem 著
 保留所有权利.本材料仅可在 Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License 所列条款及条件下复制或分发.你必须注明原始作者.你不能把本作品用于商业目的. 如果你改造、转换、或改写本作品，你只能以相同或类似许可证分发成果.
 
 > 注解
- Celery 文档使用 Creative Commons attribution-nonconmmercial-share alike 3.0 united states 授权,但 Celery 本身 采用限制较少的 BSD License （3 条款）.
+ Celery 文档使用 Creative Commons attribution-nonconmmercial-share alike 3.0 united states 授权,但 Celery 本身 采用限制较少的 BSD License （3 条款）.  
