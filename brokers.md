@@ -5,18 +5,18 @@ Celery supports several message transport alternatives.
 
 ## Broker Instructions
 
-Using RabbitMQ
-Using Redis
+Using RabbitMQ  
+Using Redis  
 
 ## Experimental Transports
 
-Using SQLAlchemy
-Using the Django Database
-Using MongoDB
-Using Amazon SQS
-Using CouchDB
-Using Beanstalk
-Using IronMQ
+Using SQLAlchemy  
+Using the Django Database  
+Using MongoDB  
+Using Amazon SQS  
+Using CouchDB  
+Using Beanstalk  
+Using IronMQ  
 
 ## Broker Overview
 
