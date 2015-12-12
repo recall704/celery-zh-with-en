@@ -107,11 +107,11 @@ If this is the first time you’re trying to use Celery, or you are new to Celer
 * Monitoring  
  A stream of monitoring events is emitted by workers and is used by built-in and external tools to tell you what your cluster is doing – in real-time.  
  
- Read more….  
+ [Read more….](http://docs.celeryproject.org/en/latest/userguide/monitoring.html#guide-monitoring)  
 
 * Workflows  
 
  Simple and complex workflows can be composed using a set of powerful primitives we call the “canvas”, including grouping, chaining, chunking and more.
 
- Read more….
+ [Read more…](http://docs.celeryproject.org/en/latest/userguide/canvas.html#guide-canvas).
 
