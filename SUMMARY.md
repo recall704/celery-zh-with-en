@@ -27,7 +27,7 @@
                * Using Beanstalk
                * Using IronMQ
            * [Broker Overview](broker_overview.md)
-       * First Steps with Celery
+       * [First Steps with Celery](first_steps_with_celery.md)
        * Next Steps
        * Resources
    * User Guide
