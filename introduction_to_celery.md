@@ -269,10 +269,10 @@ The following bundles are available:
 **celery[couchbase]**:
  	for using CouchBase as a result backend.  
 **celery[beanstalk]**:
- 	for using Beanstalk as a message transport (experimental).
+ 	for using Beanstalk as a message transport (experimental).  
 **celery[zookeeper]:**
  	for using Zookeeper as a message transport.
-**celery[zeromq]:**	for using ZeroMQ as a message transport (experimental).
+**celery[zeromq]:**	for using ZeroMQ as a message transport (experimental).  
 celery[sqlalchemy]:
  	for using SQLAlchemy as a message transport (experimental), or as a result backend (supported).
 celery[pyro]:	for using the Pyro4 message transport (experimental).
