@@ -78,3 +78,11 @@ If this is the first time you’re trying to use Celery, or you are new to Celer
 
 
 **It supports**
+* Brokers
+
+ RabbitMQ, Redis,  
+ MongoDB (exp), ZeroMQ (exp)  
+ CouchDB (exp), SQLAlchemy (exp)  
+ Django ORM (exp), Amazon SQS, (exp)  
+ and more…
+
