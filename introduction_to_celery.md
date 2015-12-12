@@ -10,6 +10,15 @@
 * Quickjump
 * Installation
 
+<br />
+>* 何为任务队列？  
+* 我需要什么？  
+* 上手  
+*  Celery 是…  
+* 特性
+* 框架集成
+* 快速跳转
+* 安装  
 
 ## What is a Task Queue?
 
