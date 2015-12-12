@@ -20,4 +20,5 @@
    * History
    * Glossary
 * Indices and tables
+   * Index
 
