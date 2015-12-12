@@ -19,6 +19,7 @@
                * [Using RabbitMQ](using_rabbitmq.md)
                * [Using Redis](using_redis.md)
            * [Experimental Transports](experimental_transports.md)
+               * Using SQLAlchemy
        * First Steps with Celery
        * Next Steps
        * Resources
