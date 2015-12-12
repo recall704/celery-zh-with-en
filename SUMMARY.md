@@ -16,5 +16,6 @@
    * Configuration and defaults
    * Django
    * Contributing
+   * Community Resources
 * [Indices and tables](indices_and_tables.md)
 
