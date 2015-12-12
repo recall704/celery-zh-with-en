@@ -11,4 +11,5 @@
    * Community Resources
    * Tutorials
    * Frequently Asked Questions
+   * Change history
 
