@@ -116,14 +116,18 @@ $ celery -A tasks worker --loglevel=info
  See the [Troubleshooting](http://docs.celeryproject.org/en/latest/getting-started/first-steps-with-celery.html#celerytut-troubleshooting) section if the worker does not start.
 
 
-In production you will want to run the worker in the background as a daemon. To do this you need to use the tools provided by your platform, or something like supervisord (see Running the worker as a daemon for more information).
+In production you will want to run the worker in the background as a daemon. To do this you need to use the tools provided by your platform, or something like [supervisord](http://supervisord.org/) (see [Running the worker as a daemon](http://docs.celeryproject.org/en/latest/tutorials/daemonizing.html#daemonizing) for more information).
 
 For a complete listing of the command-line options available, do:
 
+```
 $  celery worker --help
+```
 There are also several other commands available, and help is also available:
 
+```
 $ celery help
+```
 
 ## Calling the task
 
