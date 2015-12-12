@@ -19,4 +19,5 @@
    * Internals
    * History
    * Glossary
+* Indices and tables
 
