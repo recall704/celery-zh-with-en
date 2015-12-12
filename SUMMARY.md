@@ -15,5 +15,6 @@
    * User Guide
    * Configuration and defaults
    * Django
+   * Contributing
 * [Indices and tables](indices_and_tables.md)
 
