@@ -14,5 +14,6 @@
        * Resources
    * User Guide
    * Configuration and defaults
+   * Django
 * [Indices and tables](indices_and_tables.md)
 
