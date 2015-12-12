@@ -132,3 +132,20 @@ If this is the first time you’re trying to use Celery, or you are new to Celer
  In development workers can be configured to automatically reload source code as it changes, including *inotify(7)* support on Linux.
 
  [Read more…](http://docs.celeryproject.org/en/latest/userguide/workers.html#worker-autoreloading).
+ 
+* **Autoscaling**
+
+ Dynamically resizing the worker pool depending on load, or custom metrics specified by the user, used to limit memory usage in shared hosting/cloud environments or to enforce a given quality of service.
+
+ [Read more…](http://docs.celeryproject.org/en/latest/userguide/workers.html#worker-autoscaling).
+ 
+* **Resource Leak Protection**
+
+ The --maxtasksperchild option is used for user tasks leaking resources, like memory or file descriptors, that are simply out of your control.
+
+ [Read more…](http://docs.celeryproject.org/en/latest/userguide/workers.html#worker-maxtasksperchild).
+ 
+* **User Components**
+
+ Each worker component can be customized, and additional components can be defined by the user. The worker is built up using “bootsteps” — a dependency graph enabling fine grained control of the worker’s internals.  
+
