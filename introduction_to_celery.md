@@ -104,18 +104,18 @@ If this is the first time you’re trying to use Celery, or you are new to Celer
 
 
 ## Features
-* Monitoring  
+* **Monitoring**  
  A stream of monitoring events is emitted by workers and is used by built-in and external tools to tell you what your cluster is doing – in real-time.  
  
  [Read more….](http://docs.celeryproject.org/en/latest/userguide/monitoring.html#guide-monitoring)  
 
-* Workflows  
+* **Workflows**  
 
  Simple and complex workflows can be composed using a set of powerful primitives we call the “canvas”, including grouping, chaining, chunking and more.
 
  [Read more…](http://docs.celeryproject.org/en/latest/userguide/canvas.html#guide-canvas).
 
-* Time & Rate Limits
+* **Time & Rate Limits**
 
  You can control how many tasks can be executed per second/minute/hour, or how long a task can be allowed to run, and this can be set as a default, for a specific worker or individually for each task type.
 
