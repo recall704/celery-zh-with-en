@@ -245,28 +245,39 @@ CELERY_ENABLE_UTC = True
 
 To verify that your configuration file works properly, and doesn’t contain any syntax errors, you can try to import it:
 
+```
 $ python -m celeryconfig
+```
 For a complete reference of configuration options, see Configuration and defaults.
 
 To demonstrate the power of configuration files, this is how you would route a misbehaving task to a dedicated queue:
 
 celeryconfig.py:
 
+```
 CELERY_ROUTES = {
     'tasks.add': 'low-priority',
 }
+```
+
 Or instead of routing it you could rate limit the task instead, so that only 10 tasks of this type can be processed in a minute (10/m):
 
 celeryconfig.py:
 
+```
 CELERY_ANNOTATIONS = {
     'tasks.add': {'rate_limit': '10/m'}
 }
+```
+
 If you are using RabbitMQ or Redis as the broker then you can also direct the workers to set a new rate limit for the task at runtime:
 
+```
 $ celery -A tasks control rate_limit tasks.add 10/m
 worker@example.com: OK
     new rate limit set successfully
+```
+
 See Routing Tasks to read more about task routing, and the CELERY_ANNOTATIONS setting for more about annotations, or Monitoring and Management Guide for more about remote control commands, and how to monitor what your workers are doing.
 
 Where to go from here
