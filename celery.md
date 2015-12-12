@@ -46,15 +46,15 @@ You can also check out the FAQ.
 6. Contributing  
 7. Community Resources  
 8. Tutorials  
-10. Frequently Asked Questions  
-11. Change history  
-12. What’s new in Celery 3.1 (Cipater)  
-13. What’s new in Celery 3.0 (Chiastic Slide)  
-14. What’s new in Celery 2.5  
-15. API Reference  
-16. Internals  
-17. History  
-18. Glossary  
+9. Frequently Asked Questions  
+10. Change history  
+11. What’s new in Celery 3.1 (Cipater)  
+12. What’s new in Celery 3.0 (Chiastic Slide)  
+13. What’s new in Celery 2.5  
+14. API Reference  
+15. Internals  
+16. History  
+17. Glossary  
 
 ## Indices and tables
 * Index  
