@@ -12,5 +12,6 @@
        * First Steps with Celery
        * Next Steps
        * Resources
+   * User Guide
 * [Indices and tables](indices_and_tables.md)
 
