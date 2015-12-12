@@ -1,6 +1,6 @@
 # Summary
 
 * [Introduction](README.md)
-* Contents
+* [Contents](contents.md)
    * Copyright
 
