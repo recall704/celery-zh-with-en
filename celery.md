@@ -19,14 +19,14 @@ You can also check out the FAQ.
 
 ## Contents
 
-Copyright  
-Getting Started  
-Introduction to Celery  
-Brokers  
-First Steps with Celery  
-Next Steps  
-Resources  
-User Guide  
+1. Copyright 
+2. Getting Started  
+ * Introduction to Celery  
+ * Brokers  
+ * First Steps with Celery  
+ * Next Steps  
+ * Resources  
+3. User Guide  
 Application  
 Tasks  
 Calling Tasks  
