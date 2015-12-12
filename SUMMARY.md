@@ -19,5 +19,5 @@
    * Internals
    * History
    * Glossary
-* Indices and tables
+* [Indices and tables](indices_and_tables.md)
 
