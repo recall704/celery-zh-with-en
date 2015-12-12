@@ -20,6 +20,7 @@
                * [Using Redis](using_redis.md)
            * [Experimental Transports](experimental_transports.md)
                * Using SQLAlchemy
+               * Using the Django Database
        * First Steps with Celery
        * Next Steps
        * Resources
