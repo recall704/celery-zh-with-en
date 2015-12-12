@@ -228,10 +228,11 @@ app.config_from_object('celeryconfig')
 
 This module is often called “*celeryconfig*”, but you can use any module name.
 
-A module named celeryconfig.py must then be available to load from the current directory or on the Python path, it could look like this:
+A module named *celeryconfig.py* must then be available to load from the current directory or on the Python path, it could look like this:
 
 celeryconfig.py:
 
+```
 BROKER_URL = 'amqp://'
 CELERY_RESULT_BACKEND = 'rpc://'
 
@@ -240,6 +241,7 @@ CELERY_RESULT_SERIALIZER = 'json'
 CELERY_ACCEPT_CONTENT=['json']
 CELERY_TIMEZONE = 'Europe/Oslo'
 CELERY_ENABLE_UTC = True
+```
 To verify that your configuration file works properly, and doesn’t contain any syntax errors, you can try to import it:
 
 $ python -m celeryconfig
