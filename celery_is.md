@@ -97,3 +97,9 @@
  [CouchDB](http://docs.celeryproject.org/en/latest/getting-started/brokers/couchdb.html#broker-couchdb) (实验性), [SQLAlchemy](http://docs.celeryproject.org/en/latest/getting-started/brokers/sqlalchemy.html#broker-sqlalchemy) (实验性)  
  [Django ORM](http://docs.celeryproject.org/en/latest/getting-started/brokers/django.html#broker-django) (实验性), [Amazon SQS](http://docs.celeryproject.org/en/latest/getting-started/brokers/sqs.html#broker-sqs), (实验性)  
  更多...
+
+* 并发
+
+ prefork (多进程),  
+ [Eventlet](http://eventlet.net/), [gevent](http://gevent.org/)  
+ 多线程/单线程  
