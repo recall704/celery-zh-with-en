@@ -159,14 +159,8 @@ Celery is easy to integrate with web frameworks, some of which even have integra
 | Pyramid | pyramid_celery |
 | Pylons | celery-pylons |
 | Flask | not needed |
-| 0:5 | 1:5 |
-| 0:6 | 1:6 |
+| web2py | web2py-celery |
+| Tornado | tornado-celery |
 
-	
-Pyramid	pyramid_celery
-	
-	not needed
-web2py	web2py-celery
-Tornado	tornado-celery
 
 The integration packages are not strictly necessary, but they can make development easier, and sometimes they add important hooks like closing database connections at fork(2).
