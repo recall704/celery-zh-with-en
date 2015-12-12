@@ -73,7 +73,7 @@ For a complete list of options supported by the Redis result backend, see [Redis
 
  This option will be enabled by default in the future.
 
-* If a task is not acknowledged within the Visibility Timeout the task will be redelivered to another worker and executed.
+* If a task is not acknowledged within the [Visibility Timeout](http://docs.celeryproject.org/en/latest/getting-started/brokers/redis.html#redis-visibility-timeout) the task will be redelivered to another worker and executed.
 
 This causes problems with ETA/countdown/retry tasks where the time to execute exceeds the visibility timeout; in fact if that happens it will be executed again, and again in a loop.
 
