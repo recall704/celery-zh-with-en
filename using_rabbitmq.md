@@ -21,3 +21,8 @@ For a description of broker URLs and a full list of the various broker configura
 
 ## Installing the RabbitMQ Server
 
+See [Installing RabbitMQ](http://www.rabbitmq.com/install.html) over at RabbitMQ’s website. For Mac OS X see [Installing RabbitMQ on OS X](http://docs.celeryproject.org/en/latest/getting-started/brokers/rabbitmq.html#installing-rabbitmq-on-os-x).  
+> Note  
+>If you’re getting nodedown errors after installing and using rabbitmqctl then this blog post can help you identify the source of the problem:
+
+> http://somic.org/2009/02/19/on-rabbitmqctl-and-badrpcnodedown/
