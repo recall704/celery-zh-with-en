@@ -97,3 +97,7 @@ If this is the first time you’re trying to use Celery, or you are new to Celer
  * SQLAlchemy, Django ORM  
  * Apache Cassandra  
 
+* Serialization
+ * pickle, json, yaml, msgpack.
+ * zlib, bzip2 compression.
+ * Cryptographic message signing.
