@@ -198,13 +198,17 @@ See `celery.result` for the complete result object reference.
 
 Celery, like a consumer appliance, doesn’t need much to be operated. It has an input and an output, where you must connect the input to a broker and maybe the output to a result backend if so wanted. But if you look closely at the back there’s a lid revealing loads of sliders, dials and buttons: this is the configuration.
 
-The default configuration should be good enough for most uses, but there are many things to tweak so Celery works just the way you want it to. Reading about the options available is a good idea to get familiar with what can be configured. You can read about the options in the Configuration and defaults reference.
+The default configuration should be good enough for most uses, but there are many things to tweak so Celery works just the way you want it to. Reading about the options available is a good idea to get familiar with what can be configured. You can read about the options in the [Configuration and defaults](http://docs.celeryproject.org/en/latest/configuration.html#configuration) reference.
 
-The configuration can be set on the app directly or by using a dedicated configuration module. As an example you can configure the default serializer used for serializing task payloads by changing the CELERY_TASK_SERIALIZER setting:
+The configuration can be set on the app directly or by using a dedicated configuration module. As an example you can configure the default serializer used for serializing task payloads by changing the [CELERY_TASK_SERIALIZER](http://docs.celeryproject.org/en/latest/configuration.html#std:setting-CELERY_TASK_SERIALIZER) setting:
 
+```
 app.conf.CELERY_TASK_SERIALIZER = 'json'
+```
+
 If you are configuring many settings at once you can use update:
 
+```
 app.conf.update(
     CELERY_TASK_SERIALIZER='json',
     CELERY_ACCEPT_CONTENT=['json'],  # Ignore other content
@@ -212,6 +216,7 @@ app.conf.update(
     CELERY_TIMEZONE='Europe/Oslo',
     CELERY_ENABLE_UTC=True,
 )
+```
 For larger projects using a dedicated configuration module is useful, in fact you are discouraged from hard coding periodic task intervals and task routing options, as it is much better to keep this in a centralized location, and especially for libraries it makes it possible for users to control how they want your tasks to behave, you can also imagine your SysAdmin making simple changes to the configuration in the event of system trouble.
 
 You can tell your Celery instance to use a configuration module, by calling the app.config_from_object() method:
