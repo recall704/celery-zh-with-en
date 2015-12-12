@@ -6,4 +6,5 @@
    * Getting Started
    * User Guide
    * Configuration and defaults
+   * Django
 
