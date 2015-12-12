@@ -278,46 +278,58 @@ worker@example.com: OK
     new rate limit set successfully
 ```
 
-See Routing Tasks to read more about task routing, and the CELERY_ANNOTATIONS setting for more about annotations, or Monitoring and Management Guide for more about remote control commands, and how to monitor what your workers are doing.
+See [Routing Tasks](http://docs.celeryproject.org/en/latest/userguide/routing.html#guide-routing) to read more about task routing, and the [CELERY_ANNOTATIONS](http://docs.celeryproject.org/en/latest/configuration.html#std:setting-CELERY_ANNOTATIONS) setting for more about annotations, or [Monitoring and Management Guide](http://docs.celeryproject.org/en/latest/userguide/monitoring.html#guide-monitoring) for more about remote control commands, and how to monitor what your workers are doing.
 
-Where to go from here
-If you want to learn more you should continue to the Next Steps tutorial, and after that you can study the User Guide.
 
-Troubleshooting
-There’s also a troubleshooting section in the Frequently Asked Questions.
+## Where to go from here
 
-Worker does not start: Permission Error
-If you’re using Debian, Ubuntu or other Debian-based distributions:
+If you want to learn more you should continue to the [Next Steps](http://docs.celeryproject.org/en/latest/getting-started/next-steps.html#next-steps) tutorial, and after that you can study the [User Guide](http://docs.celeryproject.org/en/latest/userguide/index.html#guide).
 
-Debian recently renamed the /dev/shm special file to /run/shm.
 
-A simple workaround is to create a symbolic link:
+## Troubleshooting
 
-# ln -s /run/shm /dev/shm
-Others:
+There’s also a troubleshooting section in the [Frequently Asked Questions](http://docs.celeryproject.org/en/latest/faq.html#faq).
 
-If you provide any of the --pidfile, --logfile or --statedb arguments, then you must make sure that they point to a file/directory that is writable and readable by the user starting the worker.
 
-Result backend does not work or tasks are always in PENDING state.
-All tasks are PENDING by default, so the state would have been better named “unknown”. Celery does not update any state when a task is sent, and any task with no history is assumed to be pending (you know the task id after all).
+### Worker does not start: Permission Error
 
-Make sure that the task does not have ignore_result enabled.
+* If you’re using Debian, Ubuntu or other Debian-based distributions:
 
-Enabling this option will force the worker to skip updating states.
+  Debian recently renamed the /dev/shm special file to /run/shm.
 
-Make sure the CELERY_IGNORE_RESULT setting is not enabled.
+  A simple workaround is to create a symbolic link:
 
-Make sure that you do not have any old workers still running.
+  ```
+  # ln -s /run/shm /dev/shm
+  ```
+* Others:
 
-It’s easy to start multiple workers by accident, so make sure that the previous worker is properly shutdown before you start a new one.
+  If you provide any of the --pidfile, --logfile or --statedb arguments, then you must make sure that they point to a file/directory that is writable and readable by the user starting the worker.
 
-An old worker that is not configured with the expected result backend may be running and is hijacking the tasks.
 
-The –pidfile argument can be set to an absolute path to make sure this doesn’t happen.
+## Result backend does not work or tasks are always in PENDING state.
 
-Make sure the client is configured with the right backend.
+All tasks are `PENDING` by default, so the state would have been better named “unknown”. Celery does not update any state when a task is sent, and any task with no history is assumed to be pending (you know the task id after all).
 
-If for some reason the client is configured to use a different backend than the worker, you will not be able to receive the result, so make sure the backend is correct by inspecting it:
+1. Make sure that the task does not have `ignore_result` enabled.
 
->>> result = task.delay(…)
->>> print(result.backend)
+   Enabling this option will force the worker to skip updating states.
+
+2. Make sure the [CELERY_IGNORE_RESULT](http://docs.celeryproject.org/en/latest/configuration.html#std:setting-CELERY_IGNORE_RESULT) setting is not enabled.
+
+3. Make sure that you do not have any old workers still running.
+
+ It’s easy to start multiple workers by accident, so make sure that the previous worker is properly shutdown before you start a new one.
+
+ An old worker that is not configured with the expected result backend may be running and is hijacking the tasks.
+
+ The *–pidfile* argument can be set to an absolute path to make sure this doesn’t happen.
+
+4. Make sure the client is configured with the right backend.
+
+ If for some reason the client is configured to use a different backend than the worker, you will not be able to receive the result, so make sure the backend is correct by inspecting it:
+ 
+ ```
+ >>> result = task.delay(…)
+ >>> print(result.backend)
+ ```
