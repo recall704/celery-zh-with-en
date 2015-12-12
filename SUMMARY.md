@@ -8,4 +8,5 @@
    * Configuration and defaults
    * Django
    * Contributing
+   * Community Resources
 
