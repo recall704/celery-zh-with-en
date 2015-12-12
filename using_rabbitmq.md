@@ -16,3 +16,5 @@ RabbitMQ is the default broker so it does not require any additional dependencie
 ```
 >>> BROKER_URL = 'amqp://guest:guest@localhost:5672//'
 ```
+For a description of broker URLs and a full list of the various broker configuration options available to Celery, see [Broker Settings](http://docs.celeryproject.org/en/latest/configuration.html#conf-broker-settings).
+
