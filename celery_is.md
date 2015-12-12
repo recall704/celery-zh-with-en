@@ -102,4 +102,21 @@
 
  prefork (多进程),  
  [Eventlet](http://eventlet.net/), [gevent](http://gevent.org/)  
- 多线程/单线程  
+ 多线程/单线程
+
+* 结果存储
+
+ AMQP, Redis 
+ memcached, MongoDB  
+ SQLAlchemy, Django ORM  
+ Apache Cassandra  
+
+* 序列化
+
+ pickle, json, yaml, msgpack  
+ zlib, bzip2 压缩  
+ 密码学消息签名  
+
+
+# 特性
+
