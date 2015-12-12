@@ -57,6 +57,6 @@ You can also check out the FAQ.
 18 Glossary  
 
 ## Indices and tables
-Index  
-Module Index  
-Search Page  
+* Index  
+* Module Index  
+* Search Page  
