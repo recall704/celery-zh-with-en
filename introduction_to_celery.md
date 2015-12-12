@@ -86,3 +86,8 @@ If this is the first time you’re trying to use Celery, or you are new to Celer
  [Django ORM](http://docs.celeryproject.org/en/latest/getting-started/brokers/django.html#broker-django) (exp), [Amazon SQS](http://docs.celeryproject.org/en/latest/getting-started/brokers/sqs.html#broker-sqs), (exp)  
  and more…
 
+* Concurrency  
+ prefork (multiprocessing),  
+ Eventlet, gevent  
+ threads/single threaded  
+
