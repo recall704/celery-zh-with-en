@@ -70,9 +70,9 @@ If you’re already using a Django database for example, using it as your messag
 
 ### Other brokers
 
-In addition to the above, there are other experimental transport implementations to choose from, including Amazon SQS, Using MongoDB and IronMQ.
+In addition to the above, there are other experimental transport implementations to choose from, including [Amazon SQS](http://docs.celeryproject.org/en/latest/getting-started/brokers/sqs.html#broker-sqs), [Using MongoDB](http://docs.celeryproject.org/en/latest/getting-started/brokers/mongodb.html#broker-mongodb) and [IronMQ](http://docs.celeryproject.org/en/latest/getting-started/brokers/ironmq.html#broker-ironmq).
 
-See Broker Overview for a full list.
+See [Broker Overview](http://docs.celeryproject.org/en/latest/getting-started/brokers/index.html#broker-overview) for a full list.
 
 
 ## Installing Celery
