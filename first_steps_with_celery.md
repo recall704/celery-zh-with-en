@@ -147,9 +147,9 @@ Calling a task returns an [AsyncResult](http://docs.celeryproject.org/en/latest/
 
 ## Keeping Results
 
-If you want to keep track of the tasks’ states, Celery needs to store or send the states somewhere. There are several built-in result backends to choose from: SQLAlchemy/Django ORM, Memcached, Redis, AMQP (RabbitMQ), and MongoDB – or you can define your own.
+If you want to keep track of the tasks’ states, Celery needs to store or send the states somewhere. There are several built-in result backends to choose from: [SQLAlchemy](http://www.sqlalchemy.org/)/[Django](http://djangoproject.com/) ORM, [Memcached](http://memcached.org/), [Redis](http://redis.io/), AMQP ([RabbitMQ](http://www.rabbitmq.com/)), and [MongoDB](http://www.mongodb.org/) – or you can define your own.
 
-For this example you will use the rpc result backend, which sends states back as transient messages. The backend is specified via the backend argument to Celery, (or via the CELERY_RESULT_BACKEND setting if you choose to use a configuration module):
+For this example you will use the rpc result backend, which sends states back as transient messages. The backend is specified via the backend argument to [Celery](http://docs.celeryproject.org/en/latest/reference/celery.html#celery.Celery), (or via the [CELERY_RESULT_BACKEND](http://docs.celeryproject.org/en/latest/configuration.html#std:setting-CELERY_RESULT_BACKEND) setting if you choose to use a configuration module):
 
 app = Celery('tasks', backend='rpc://', broker='amqp://')
 Or if you want to use Redis as the result backend, but still use RabbitMQ as the message broker (a popular combination):
