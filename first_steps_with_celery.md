@@ -217,6 +217,7 @@ app.conf.update(
     CELERY_ENABLE_UTC=True,
 )
 ```
+
 For larger projects using a dedicated configuration module is useful, in fact you are discouraged from hard coding periodic task intervals and task routing options, as it is much better to keep this in a centralized location, and especially for libraries it makes it possible for users to control how they want your tasks to behave, you can also imagine your SysAdmin making simple changes to the configuration in the event of system trouble.
 
 You can tell your Celery instance to use a configuration module, by calling the app.config_from_object() method:
