@@ -121,3 +121,8 @@ If this is the first time you’re trying to use Celery, or you are new to Celer
 
  [Read more…](http://docs.celeryproject.org/en/latest/userguide/workers.html#worker-time-limits).
  
+* **Scheduling**
+
+ You can specify the time to run a task in seconds or a [datetime](http://docs.python.org/dev/library/datetime.html#datetime.datetime), or or you can use periodic tasks for recurring events based on a simple interval, or crontab expressions supporting minute, hour, day of week, day of month, and month of year.
+
+ [Read more…](http://docs.celeryproject.org/en/latest/userguide/periodic-tasks.html#guide-beat).
