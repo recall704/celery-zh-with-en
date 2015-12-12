@@ -9,5 +9,6 @@
        * [Brokers](brokers.md)
            * Broker Instructions
            * Experimental Transports
+       * First Steps with Celery
 * [Indices and tables](indices_and_tables.md)
 
