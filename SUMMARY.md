@@ -13,4 +13,5 @@
    * Frequently Asked Questions
    * Change history
    * What’s new in Celery 3.1 (Cipater)
+   * What’s new in Celery 3.0 (Chiastic Slide)
 
