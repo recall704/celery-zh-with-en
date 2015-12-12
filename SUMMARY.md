@@ -8,6 +8,7 @@
        * Brokers
        * First Steps with Celery
        * Next Steps
+       * Resources
    * User Guide
    * Configuration and defaults
    * Django
