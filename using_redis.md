@@ -75,27 +75,29 @@ For a complete list of options supported by the Redis result backend, see [Redis
 
 * If a task is not acknowledged within the [Visibility Timeout](http://docs.celeryproject.org/en/latest/getting-started/brokers/redis.html#redis-visibility-timeout) the task will be redelivered to another worker and executed.
 
-This causes problems with ETA/countdown/retry tasks where the time to execute exceeds the visibility timeout; in fact if that happens it will be executed again, and again in a loop.
+ This causes problems with ETA/countdown/retry tasks where the time to execute exceeds the visibility timeout; in fact if that happens it will be executed again, and again in a loop.
 
-So you have to increase the visibility timeout to match the time of the longest ETA you are planning to use.
+ So you have to increase the visibility timeout to match the time of the longest ETA you are planning to use.
 
-Note that Celery will redeliver messages at worker shutdown, so having a long visibility timeout will only delay the redelivery of ‘lost’ tasks in the event of a power failure or forcefully terminated workers.
+ Note that Celery will redeliver messages at worker shutdown, so having a long visibility timeout will only delay the redelivery of ‘lost’ tasks in the event of a power failure or forcefully terminated workers.
 
-Periodic tasks will not be affected by the visibility timeout, as this is a concept separate from ETA/countdown.
+ Periodic tasks will not be affected by the visibility timeout, as this is a concept separate from ETA/countdown.
 
-You can increase this timeout by configuring a transport option with the same name:
+ You can increase this timeout by configuring a transport option with the same name:
 
-BROKER_TRANSPORT_OPTIONS = {'visibility_timeout': 43200}
-The value must be an int describing the number of seconds.
+ `BROKER_TRANSPORT_OPTIONS = {'visibility_timeout': 43200}`  
+ The value must be an int describing the number of seconds.
 
-Monitoring events (as used by flower and other tools) are global and is not affected by the virtual host setting.
+* Monitoring events (as used by flower and other tools) are global and is not affected by the virtual host setting.
 
-This is caused by a limitation in Redis. The Redis PUB/SUB channels are global and not affected by the database number.
+  This is caused by a limitation in Redis. The Redis PUB/SUB channels are global and not affected by the database number.
 
-Redis may evict keys from the database in some situations
+* Redis may evict keys from the database in some situations
 
-If you experience an error like:
+ If you experience an error like:
 
-InconsistencyError, Probably the key ('_kombu.binding.celery') has been
-removed from the Redis database.
-you may want to configure the redis-server to not evict keys by setting the timeout parameter to 0.
+ ```
+ InconsistencyError, Probably the key ('_kombu.binding.celery') has been
+ removed from the Redis database.
+ ```
+ you may want to configure the redis-server to not evict keys by setting the *timeout* parameter to 0.
