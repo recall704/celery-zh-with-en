@@ -226,7 +226,7 @@ You can tell your Celery instance to use a configuration module, by calling the 
 app.config_from_object('celeryconfig')
 ```
 
-This module is often called “celeryconfig”, but you can use any module name.
+This module is often called “*celeryconfig*”, but you can use any module name.
 
 A module named celeryconfig.py must then be available to load from the current directory or on the Python path, it could look like this:
 
