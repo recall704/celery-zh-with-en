@@ -11,5 +11,6 @@
            * Experimental Transports
        * First Steps with Celery
        * Next Steps
+       * Resources
 * [Indices and tables](indices_and_tables.md)
 
