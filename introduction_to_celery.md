@@ -257,7 +257,7 @@ The following bundles are available:
 ### Transports and Backends
 
 **celery[librabbitmq]:** for using the librabbitmq C library.  
-celery[redis]:for using Redis as a message transport or as a result backend.  
+**celery[redis]:**       for using Redis as a message transport or as a result backend.  
 celery[mongodb]:for using MongoDB as a message transport (experimental), or as a result backend (supported).
 celery[sqs]:	for using Amazon SQS as a message transport (experimental).
 celery[memcache]:
