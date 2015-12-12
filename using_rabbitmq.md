@@ -18,3 +18,6 @@ RabbitMQ is the default broker so it does not require any additional dependencie
 ```
 For a description of broker URLs and a full list of the various broker configuration options available to Celery, see [Broker Settings](http://docs.celeryproject.org/en/latest/configuration.html#conf-broker-settings).
 
+
+## Installing the RabbitMQ Server
+
