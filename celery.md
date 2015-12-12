@@ -10,10 +10,16 @@ Celery has a large and diverse community of users and contributors, you should c
 
 Celery is Open Source and licensed under the BSD License.
 
-Getting Started
+
+## Getting Started
+
+
 If you are new to Celery you can get started by following the First Steps with Celery tutorial.
 You can also check out the FAQ.
-Contents
+
+## Contents
+
+
 Copyright
 Getting Started
 Introduction to Celery
@@ -50,7 +56,10 @@ API Reference
 Internals
 History
 Glossary
-Indices and tables
+
+## Indices and tables
+
+
 Index
 Module Index
 Search Page
