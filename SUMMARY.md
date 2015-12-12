@@ -24,6 +24,7 @@
                * Using MongoDB
                * Using Amazon SQS
                * Using CouchDB
+               * Using Beanstalk
        * First Steps with Celery
        * Next Steps
        * Resources
