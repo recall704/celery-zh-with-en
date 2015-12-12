@@ -11,7 +11,7 @@
            * [Get Started](get_started.md)
            * [Celery is…](celery_is.md)
            * [Features](features.md)
-           * Framework Integration
+           * [Framework Integration](framework_integration.md)
        * [Brokers](brokers.md)
            * Broker Instructions
            * Experimental Transports
