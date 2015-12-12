@@ -10,7 +10,7 @@
            * [What do I need?](what_do_i_need.md)
            * [Get Started](get_started.md)
            * [Celery is…](celery_is.md)
-           * Features
+           * [Features](features.md)
        * [Brokers](brokers.md)
            * Broker Instructions
            * Experimental Transports
