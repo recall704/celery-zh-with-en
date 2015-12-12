@@ -258,21 +258,21 @@ The following bundles are available:
 
 **celery[librabbitmq]:** for using the librabbitmq C library.  
 **celery[redis]:**       for using Redis as a message transport or as a result backend.  
-celery[mongodb]:for using MongoDB as a message transport (experimental), or as a result backend (supported).  
-celery[sqs]:	for using Amazon SQS as a message transport (experimental).  
-celery[memcache]:
+**celery[mongodb]:**for using MongoDB as a message transport (experimental), or as a result backend (supported).  
+**celery[sqs]:**	for using Amazon SQS as a message transport (experimental).  
+**celery[memcache]**:
  	for using memcached as a result backend.  
-celery[cassandra]:
+**celery[cassandra]**:
  	for using Apache Cassandra as a result backend.  
-celery[couchdb]:
+**celery[couchdb]**:
  	for using CouchDB as a message transport (experimental).  
-celery[couchbase]:
+**celery[couchbase]**:
  	for using CouchBase as a result backend.  
-celery[beanstalk]:
+**celery[beanstalk]**:
  	for using Beanstalk as a message transport (experimental).
-celery[zookeeper]:
+**celery[zookeeper]:**
  	for using Zookeeper as a message transport.
-celery[zeromq]:	for using ZeroMQ as a message transport (experimental).
+**celery[zeromq]:**	for using ZeroMQ as a message transport (experimental).
 celery[sqlalchemy]:
  	for using SQLAlchemy as a message transport (experimental), or as a result backend (supported).
 celery[pyro]:	for using the Pyro4 message transport (experimental).
