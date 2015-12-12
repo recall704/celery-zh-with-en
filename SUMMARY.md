@@ -21,4 +21,5 @@
    * Glossary
 * Indices and tables
    * Index
+   * Module Index
 
