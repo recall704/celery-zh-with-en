@@ -64,12 +64,12 @@ For a complete list of options supported by the Redis result backend, see [Redis
 
 * Workers will receive all task related events by default.
 
-To avoid this you must set the fanout_patterns fanout option so that the workers may only subscribe to worker related events:
+ To avoid this you must set the fanout_patterns fanout option so that the workers may only subscribe to worker related events:
 
-BROKER_TRANSPORT_OPTIONS = {'fanout_patterns': True}
-Note that this change is backward incompatible so all workers in the cluster must have this option enabled, or else they will not be able to communicate.
+ BROKER_TRANSPORT_OPTIONS = {'fanout_patterns': True}
+ Note that this change is backward incompatible so all workers in the cluster must have this option enabled, or else they will not be able to communicate.
 
-This option will be enabled by default in the future.
+ This option will be enabled by default in the future.
 
 If a task is not acknowledged within the Visibility Timeout the task will be redelivered to another worker and executed.
 
