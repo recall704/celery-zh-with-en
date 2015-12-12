@@ -46,7 +46,7 @@ If you also want to store the state and return values of tasks in Redis, you sho
 ```
 CELERY_RESULT_BACKEND = 'redis://localhost:6379/0'
 ```
-For a complete list of options supported by the Redis result backend, see Redis backend settings
+For a complete list of options supported by the Redis result backend, see [Redis backend settings](http://docs.celeryproject.org/en/latest/configuration.html#conf-redis-result-backend)
 
 
 ## Caveats
