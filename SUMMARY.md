@@ -5,6 +5,7 @@
    * [Copyright](copyright.md)
    * [Getting Started](getting_started.md)
        * Introduction to Celery
+       * Brokers
    * User Guide
    * Configuration and defaults
    * Django
