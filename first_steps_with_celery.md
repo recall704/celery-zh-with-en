@@ -91,7 +91,7 @@ In this tutorial you will keep everything contained in a single module, but for 
 
 Let’s create the file *tasks.py*:
 
-```
+```python
 from celery import Celery
 
 app = Celery('tasks', broker='amqp://guest@localhost//')
