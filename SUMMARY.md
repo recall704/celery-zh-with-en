@@ -5,5 +5,6 @@
 * [Contents](contents.md)
    * [Copyright](copyright.md)
    * [Getting Started](getting_started.md)
+       * Introduction to Celery
 * [Indices and tables](indices_and_tables.md)
 
