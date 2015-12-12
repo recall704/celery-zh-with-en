@@ -91,3 +91,9 @@ If this is the first time you’re trying to use Celery, or you are new to Celer
  [Eventlet](http://eventlet.net/), [gevent](http://gevent.org/)  
  threads/single threaded  
 
+* Result Stores  
+ * AMQP, Redis  
+ * memcached, MongoDB  
+ * SQLAlchemy, Django ORM  
+ * Apache Cassandra  
+
