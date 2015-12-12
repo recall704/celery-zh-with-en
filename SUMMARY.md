@@ -4,7 +4,7 @@
 * [Contents](contents.md)
    * [Copyright](copyright.md)
    * [Getting Started](getting_started.md)
-       * Introduction to Celery
+       * [Introduction to Celery](introduction_to_celery.md)
        * Brokers
        * First Steps with Celery
        * Next Steps
