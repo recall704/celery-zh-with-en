@@ -54,7 +54,7 @@ You can also check out the FAQ.
 15. API Reference  
 16. Internals  
 17. History  
-18 Glossary  
+18. Glossary  
 
 ## Indices and tables
 * Index  
