@@ -31,9 +31,9 @@ redis+socket:///path/to/redis.sock
 
 ### Visibility Timeout
 
-The visibility timeout defines the number of seconds to wait for the worker to acknowledge the task before the message is redelivered to another worker. Be sure to see Caveats below.
+The visibility timeout defines the number of seconds to wait for the worker to acknowledge the task before the message is redelivered to another worker. Be sure to see [Caveats](http://docs.celeryproject.org/en/latest/getting-started/brokers/redis.html#redis-caveats) below.
 
-This option is set via the BROKER_TRANSPORT_OPTIONS setting:
+This option is set via the [BROKER_TRANSPORT_OPTIONS](http://docs.celeryproject.org/en/latest/configuration.html#std:setting-BROKER_TRANSPORT_OPTIONS) setting:
 
 BROKER_TRANSPORT_OPTIONS = {'visibility_timeout': 3600}  # 1 hour.
 The default visibility timeout for Redis is 1 hour.
