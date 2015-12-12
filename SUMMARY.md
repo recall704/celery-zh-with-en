@@ -22,6 +22,7 @@
                * Using SQLAlchemy
                * Using the Django Database
                * Using MongoDB
+               * Using Amazon SQS
        * First Steps with Celery
        * Next Steps
        * Resources
