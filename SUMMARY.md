@@ -5,4 +5,5 @@
    * Copyright
    * Getting Started
    * User Guide
+   * Configuration and defaults
 
