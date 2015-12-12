@@ -58,3 +58,32 @@
 
 # 什么是celery
 
+* 简单
+
+　 Celery 易于使用和维护，并且它 不需要配置文件 。
+
+　 Celery 有一个活跃、友好的社区来让你寻求帮助，包括一个 邮件列表 和一个 IRC 频道 。
+
+　下面是一个你可以实现的最简应用：
+
+    ```
+    from celery import Celery
+    
+    app = Celery('hello', broker='amqp://guest@localhost//')
+    
+    @app.task
+    def hello():
+        return 'hello world'
+    ```
+* 高可用性  
+
+  倘若连接丢失或失败，职程和客户端会自动重试，并且一些中间人通过 主/主 或 主/从 方式复制来提高可用性.
+
+
+* 快速
+
+ 单个 Celery 进程每分钟可处理数以百万计的任务，而保持往返延迟在亚毫秒级（使用 RabbitMQ、py-librabbitmq 和优化过的设置）
+
+* 灵活
+
+Celery 几乎所有部分都可以扩展或单独使用。可以自制连接池、 序列化、压缩模式、日志、调度器、消费者、生产者、自动扩展、 中间人传输或更多
