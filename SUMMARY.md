@@ -13,6 +13,7 @@
            * [Features](features.md)
            * [Framework Integration](framework_integration.md)
            * [Quickjump](quickjump.md)
+           * Installation
        * [Brokers](brokers.md)
            * Broker Instructions
            * Experimental Transports
