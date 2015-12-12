@@ -15,7 +15,7 @@
            * [Quickjump](quickjump.md)
            * [Installation](installation.md)
        * [Brokers](brokers.md)
-           * Broker Instructions
+           * [Broker Instructions](broker_instructions.md)
            * Experimental Transports
        * First Steps with Celery
        * Next Steps
