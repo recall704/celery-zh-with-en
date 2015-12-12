@@ -8,5 +8,6 @@
        * [Introduction to Celery](introduction_to_celery.md)
        * [Brokers](brokers.md)
            * Broker Instructions
+           * Experimental Transports
 * [Indices and tables](indices_and_tables.md)
 
