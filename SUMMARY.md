@@ -10,5 +10,6 @@
            * Broker Instructions
            * Experimental Transports
        * First Steps with Celery
+       * Next Steps
 * [Indices and tables](indices_and_tables.md)
 
