@@ -77,9 +77,11 @@ See [Broker Overview](http://docs.celeryproject.org/en/latest/getting-started/br
 
 ## Installing Celery
 
-Celery is on the Python Package Index (PyPI), so it can be installed with standard Python tools like pip or easy_install:
+Celery is on the Python Package Index (PyPI), so it can be installed with standard Python tools like *pip* or *easy_install*:
 
+```
 $ pip install celery
+```
 
 ## Application
 
