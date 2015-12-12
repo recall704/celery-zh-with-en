@@ -37,4 +37,6 @@ Celery version 3.0 runs on
 >This is the last version to support Python 2.5, and from the next version Python 2.6 or newer is required. The last version to support Python 2.4 was Celery series 2.2.  
 
 
+## Get Started
+If this is the first time you’re trying to use Celery, or you are new to Celery 3.0 coming from previous versions then you should read our getting started tutorials:  
 
