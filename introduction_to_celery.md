@@ -295,3 +295,15 @@ The last command must be executed as a privileged user if you are not currently 
 
 ## Using the development version
 
+**With pip**  
+The Celery development version also requires the development versions of kombu, amqp and billiard.  
+
+You can install the latest snapshot of these using the following pip commands:
+```
+$ pip install https://github.com/celery/celery/zipball/master#egg=celery
+$ pip install https://github.com/celery/billiard/zipball/master#egg=billiard
+$ pip install https://github.com/celery/py-amqp/zipball/master#egg=amqp
+$ pip install https://github.com/celery/kombu/zipball/master#egg=kombu
+```
+**With git**
+Please the Contributing section.
