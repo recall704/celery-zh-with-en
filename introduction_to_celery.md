@@ -47,7 +47,7 @@ If this is the first time you’re trying to use Celery, or you are new to Celer
 ## Celery is…
 
 
-* Simple
+* **Simple**
 
  Celery is easy to use and maintain, and it doesn’t need configuration files.
 
@@ -64,14 +64,17 @@ If this is the first time you’re trying to use Celery, or you are new to Celer
     def hello():
         return 'hello world'
     ```
-* Highly Available  
+* **Highly Available**  
 
  Workers and clients will automatically retry in the event of connection loss or failure, and some brokers support HA in way of Master/Master or Master/Slave replication.
 
-* Fast
+* **Fast**
 
   A single Celery process can process millions of tasks a minute, with sub-millisecond round-trip latency (using RabbitMQ, py-librabbitmq, and optimized settings).
 
-* Flexible
+* **Flexible**
 
  Almost every part of Celery can be extended or used on its own, Custom pool implementations, serializers, compression schemes, logging, schedulers, consumers, producers, autoscalers, broker transports and much more.
+
+
+**It supports**
