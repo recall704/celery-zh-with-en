@@ -18,4 +18,5 @@
    * API Reference
    * Internals
    * History
+   * Glossary
 
