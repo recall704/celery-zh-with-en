@@ -47,7 +47,7 @@ If this is the first time you’re trying to use Celery, or you are new to Celer
 ## Celery is…
 
 ```
-* Simple
+ * Simple
 
 Celery is easy to use and maintain, and it doesn’t need configuration files.
 
