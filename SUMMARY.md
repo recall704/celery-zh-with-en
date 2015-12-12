@@ -23,6 +23,7 @@
                * Using the Django Database
                * Using MongoDB
                * Using Amazon SQS
+               * Using CouchDB
        * First Steps with Celery
        * Next Steps
        * Resources
