@@ -2,7 +2,7 @@
 # Copyright
 
   
-Celery User Manual  
+Celery User Manual    
 
 by Ask Solem
 
