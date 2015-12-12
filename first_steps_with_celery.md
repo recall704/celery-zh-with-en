@@ -151,10 +151,16 @@ If you want to keep track of the tasks’ states, Celery needs to store or send 
 
 For this example you will use the rpc result backend, which sends states back as transient messages. The backend is specified via the backend argument to [Celery](http://docs.celeryproject.org/en/latest/reference/celery.html#celery.Celery), (or via the [CELERY_RESULT_BACKEND](http://docs.celeryproject.org/en/latest/configuration.html#std:setting-CELERY_RESULT_BACKEND) setting if you choose to use a configuration module):
 
+```
 app = Celery('tasks', backend='rpc://', broker='amqp://')
+```
+
 Or if you want to use Redis as the result backend, but still use RabbitMQ as the message broker (a popular combination):
 
+```
 app = Celery('tasks', backend='redis://localhost', broker='amqp://')
+```
+
 To read more about result backends please see Result Backends.
 
 Now with the result backend configured, let’s call the task again. This time you’ll hold on to the AsyncResult instance returned when you call a task:
