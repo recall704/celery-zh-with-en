@@ -12,4 +12,5 @@
    * Tutorials
    * Frequently Asked Questions
    * Change history
+   * What’s new in Celery 3.1 (Cipater)
 
