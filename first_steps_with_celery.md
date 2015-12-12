@@ -109,7 +109,9 @@ You defined a single task, called `add`, which returns the sum of two numbers.
 
 You now run the worker by executing our program with the worker argument:
 
+```
 $ celery -A tasks worker --loglevel=info
+```
 Note
 See the Troubleshooting section if the worker does not start.
 In production you will want to run the worker in the background as a daemon. To do this you need to use the tools provided by your platform, or something like supervisord (see Running the worker as a daemon for more information).
