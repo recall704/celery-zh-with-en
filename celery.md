@@ -6,7 +6,7 @@ Celery is a simple, flexible and reliable distributed system to process vast amo
 
 It’s a task queue with focus on real-time processing, while also supporting task scheduling.
 
-Celery has a large and diverse community of users and contributors, you should come join us on IRC or our mailing-list.
+Celery has a large and diverse community of users and contributors, you should come join us [on IRC](http://docs.celeryproject.org/en/latest/getting-started/resources.html#irc-channel) or [our mailing-list](http://docs.celeryproject.org/en/latest/getting-started/resources.html#mailing-list).
 
 Celery is Open Source and licensed under the BSD License.
 
