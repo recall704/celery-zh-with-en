@@ -271,9 +271,9 @@ The following bundles are available:
 **celery[beanstalk]**:
  	for using Beanstalk as a message transport (experimental).  
 **celery[zookeeper]:**
- 	for using Zookeeper as a message transport.
+ 	for using Zookeeper as a message transport.  
 **celery[zeromq]:**	for using ZeroMQ as a message transport (experimental).  
-celery[sqlalchemy]:
- 	for using SQLAlchemy as a message transport (experimental), or as a result backend (supported).
-celery[pyro]:	for using the Pyro4 message transport (experimental).
-celery[slmq]:	for using the SoftLayer Message Queue transport (experimental).
+**celery[sqlalchemy]:**
+ 	for using SQLAlchemy as a message transport (experimental), or as a result backend (supported).  
+**celery[pyro]:**	for using the Pyro4 message transport (experimental).  
+**celery[slmq]:**	for using the SoftLayer Message Queue transport (experimental).
