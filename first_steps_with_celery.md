@@ -27,12 +27,16 @@ Celery may seem daunting at first - but don’t worry - this tutorial will get y
  * Worker does not start: Permission Error  
  * Result backend does not work or tasks are always in PENDING state.  
 
-Choosing a Broker
+
+## Choosing a Broker
+
 Celery requires a solution to send and receive messages; usually this comes in the form of a separate service called a message broker.
 
 There are several choices available, including:
 
-RabbitMQ
+
+### RabbitMQ
+
 RabbitMQ is feature-complete, stable, durable and easy to install. It’s an excellent choice for a production environment. Detailed information about using RabbitMQ with Celery:
 
 Using RabbitMQ
@@ -44,27 +48,37 @@ When the command completes the broker is already running in the background, read
 And don’t worry if you’re not running Ubuntu or Debian, you can go to this website to find similarly simple installation instructions for other platforms, including Microsoft Windows:
 
 http://www.rabbitmq.com/download.html
-Redis
+
+### Redis
+
 Redis is also feature-complete, but is more susceptible to data loss in the event of abrupt termination or power failures. Detailed information about using Redis:
 
 Using Redis
-Using a database
+
+### Using a database
+
 Using a database as a message queue is not recommended, but can be sufficient for very small installations. Your options include:
 
 Using SQLAlchemy
 Using the Django Database
 If you’re already using a Django database for example, using it as your message broker can be convenient while developing even if you use a more robust system in production.
 
-Other brokers
+
+### Other brokers
+
 In addition to the above, there are other experimental transport implementations to choose from, including Amazon SQS, Using MongoDB and IronMQ.
 
 See Broker Overview for a full list.
 
-Installing Celery
+
+## Installing Celery
+
 Celery is on the Python Package Index (PyPI), so it can be installed with standard Python tools like pip or easy_install:
 
 $ pip install celery
-Application
+
+## Application
+
 The first thing you need is a Celery instance, which is called the celery application or just “app” for short. Since this instance is used as the entry-point for everything you want to do in Celery, like creating tasks and managing workers, it must be possible for other modules to import it.
 
 In this tutorial you will keep everything contained in a single module, but for larger projects you want to create a dedicated module.
@@ -82,7 +96,9 @@ The first argument to Celery is the name of the current module, this is needed s
 
 You defined a single task, called add, which returns the sum of two numbers.
 
-Running the celery worker server
+
+## Running the celery worker server
+
 You now run the worker by executing our program with the worker argument:
 
 $ celery -A tasks worker --loglevel=info
@@ -96,7 +112,9 @@ $  celery worker --help
 There are also several other commands available, and help is also available:
 
 $ celery help
-Calling the task
+
+## Calling the task
+
 To call our task you can use the delay() method.
 
 This is a handy shortcut to the apply_async() method which gives greater control of the task execution (see Calling Tasks):
@@ -107,7 +125,9 @@ The task has now been processed by the worker you started earlier, and you can v
 
 Calling a task returns an AsyncResult instance, which can be used to check the state of the task, wait for the task to finish or get its return value (or if the task failed, the exception and traceback). But this isn’t enabled by default, and you have to configure Celery to use a result backend, which is detailed in the next section.
 
-Keeping Results
+
+## Keeping Results
+
 If you want to keep track of the tasks’ states, Celery needs to store or send the states somewhere. There are several built-in result backends to choose from: SQLAlchemy/Django ORM, Memcached, Redis, AMQP (RabbitMQ), and MongoDB – or you can define your own.
 
 For this example you will use the rpc result backend, which sends states back as transient messages. The backend is specified via the backend argument to Celery, (or via the CELERY_RESULT_BACKEND setting if you choose to use a configuration module):
@@ -138,7 +158,9 @@ If the task raised an exception you can also gain access to the original traceba
 …
 See celery.result for the complete result object reference.
 
-Configuration
+
+## Configuration
+
 Celery, like a consumer appliance, doesn’t need much to be operated. It has an input and an output, where you must connect the input to a broker and maybe the output to a result backend if so wanted. But if you look closely at the back there’s a lid revealing loads of sliders, dials and buttons: this is the configuration.
 
 The default configuration should be good enough for most uses, but there are many things to tweak so Celery works just the way you want it to. Reading about the options available is a good idea to get familiar with what can be configured. You can read about the options in the Configuration and defaults reference.
