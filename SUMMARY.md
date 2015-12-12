@@ -36,5 +36,5 @@
    * Contributing
    * Community Resources
    * Tutorials
-* [Indices and tables](indices_and_tables.md)
+* Indices and tables
 
