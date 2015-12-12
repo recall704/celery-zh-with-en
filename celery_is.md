@@ -54,3 +54,7 @@
  * pickle, json, yaml, msgpack.  
  * zlib, bzip2 compression.  
  * Cryptographic message signing.  
+
+
+# 什么是celery
+
