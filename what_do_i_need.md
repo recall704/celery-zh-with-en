@@ -12,3 +12,11 @@ Celery can run on a single machine, on multiple machines, or even across data ce
   * Jython ❨2.5, 2.7❩
 
 >  This is the last version to support Python 2.5, and from the next version Python 2.6 or newer is required. The last version to support Python 2.4 was Celery series 2.2.  
+
+
+
+# 运行条件
+
+Celery 需要一个发送和接受消息的传输者。RabbitMQ 和 Redis 中间人的消息传输支持所有特性，但也提供大量其他实验性方案的支持，包括用 SQLite 进行本地开发.
+
+Celery 可以单机运行，也可以在多台机器上运行，甚至可以跨越数据中心运行.
