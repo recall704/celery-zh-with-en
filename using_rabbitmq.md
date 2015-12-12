@@ -76,3 +76,17 @@ Then add that host name to /etc/hosts so it’s possible to resolve it back into
 ```
 127.0.0.1       localhost myhost myhost.local
 ```
+If you start the rabbitmq server, your rabbit node should now be rabbit@myhost, as verified by **rabbitmqctl**:
+```
+$ sudo rabbitmqctl status
+Status of node rabbit@myhost ...
+[{running_applications,[{rabbit,"RabbitMQ","1.7.1"},
+                    {mnesia,"MNESIA  CXC 138 12","4.4.12"},
+                    {os_mon,"CPO  CXC 138 46","2.2.4"},
+                    {sasl,"SASL  CXC 138 11","2.1.8"},
+                    {stdlib,"ERTS  CXC 138 10","1.16.4"},
+                    {kernel,"ERTS  CXC 138 10","2.13.4"}]},
+{nodes,[rabbit@myhost]},
+{running_nodes,[rabbit@myhost]}]
+...done.
+```
