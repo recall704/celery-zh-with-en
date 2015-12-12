@@ -26,7 +26,7 @@
                * Using CouchDB
                * Using Beanstalk
                * Using IronMQ
-           * Broker Overview
+           * [Broker Overview](broker_overview.md)
        * First Steps with Celery
        * Next Steps
        * Resources
