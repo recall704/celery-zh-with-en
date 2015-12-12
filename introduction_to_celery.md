@@ -291,3 +291,7 @@ $ python setup.py build
 # python setup.py install
 ```
 The last command must be executed as a privileged user if you are not currently using a virtualenv.
+
+
+## Using the development version
+
