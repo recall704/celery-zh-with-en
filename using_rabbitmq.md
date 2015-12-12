@@ -90,3 +90,21 @@ Status of node rabbit@myhost ...
 {running_nodes,[rabbit@myhost]}]
 ...done.
 ```
+This is especially important if your DHCP server gives you a host name starting with an IP address, (e.g. 23.10.112.31.comcast.net), because then RabbitMQ will try to use rabbit@23, which is an illegal host name.
+
+
+### Starting/Stopping the RabbitMQ server
+
+To start the server:
+```
+$ sudo rabbitmq-server
+```
+you can also run it in the background by adding the -detached option (note: only one dash):
+```
+$ sudo rabbitmq-server -detached
+```
+Never use **kill** to stop the RabbitMQ server, but rather use the **rabbitmqctl** command:
+```
+$ sudo rabbitmqctl stop
+```
+When the server is running, you can continue reading [Setting up RabbitMQ](http://docs.celeryproject.org/en/latest/getting-started/brokers/rabbitmq.html#setting-up-rabbitmq).
