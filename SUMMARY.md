@@ -4,6 +4,7 @@
 * [Contents](contents.md)
    * [Copyright](copyright.md)
    * [Getting Started](getting_started.md)
+       * Introduction to Celery
    * User Guide
    * Configuration and defaults
    * Django
