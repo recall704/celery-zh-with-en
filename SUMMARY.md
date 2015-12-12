@@ -3,7 +3,7 @@
 * [Introduction](README.md)
 * [Contents](contents.md)
    * [Copyright](copyright.md)
-   * Getting Started
+   * [Getting Started](getting_started.md)
    * User Guide
    * Configuration and defaults
    * Django
