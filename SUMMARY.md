@@ -25,6 +25,7 @@
                * Using Amazon SQS
                * Using CouchDB
                * Using Beanstalk
+               * Using IronMQ
        * First Steps with Celery
        * Next Steps
        * Resources
