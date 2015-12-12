@@ -27,34 +27,34 @@ You can also check out the FAQ.
  * Next Steps  
  * Resources  
 3. User Guide  
-Application  
-Tasks  
-Calling Tasks  
-Canvas: Designing Workflows  
-Workers Guide  
-Periodic Tasks  
-HTTP Callback Tasks (Webhooks)  
-Routing Tasks  
-Monitoring and Management Guide  
-Security  
-Optimizing  
-Concurrency  
-Signals  
-Extensions and Bootsteps  
-Configuration and defaults  
-Django  
-Contributing  
-Community Resources  
-Tutorials  
-Frequently Asked Questions  
-Change history  
-What’s new in Celery 3.1 (Cipater)  
-What’s new in Celery 3.0 (Chiastic Slide)  
-What’s new in Celery 2.5  
-API Reference  
-Internals  
-History  
-Glossary  
+ * Application  
+ * Tasks  
+ * Calling Tasks  
+ * Canvas: Designing Workflows  
+ * Workers Guide  
+ * Periodic Tasks  
+ * HTTP Callback Tasks (Webhooks)  
+ * Routing Tasks  
+ * Monitoring and Management Guide  
+ * Security  
+ * Optimizing  
+ * Concurrency  
+ * Signals  
+ * Extensions and Bootsteps  
+4. Configuration and defaults  
+5. Django  
+6. Contributing  
+7. Community Resources  
+8. Tutorials  
+10. Frequently Asked Questions  
+11. Change history  
+12. What’s new in Celery 3.1 (Cipater)  
+13. What’s new in Celery 3.0 (Chiastic Slide)  
+14. What’s new in Celery 2.5  
+15. API Reference  
+16. Internals  
+17. History  
+18 Glossary  
 
 ## Indices and tables
 Index  
