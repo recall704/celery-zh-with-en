@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
 * [Contents](contents.md)
-   * Copyright
+   * [Copyright](copyright.md)
    * Getting Started
    * User Guide
    * Configuration and defaults
