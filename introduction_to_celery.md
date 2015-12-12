@@ -149,3 +149,24 @@ If this is the first time you’re trying to use Celery, or you are new to Celer
 
  Each worker component can be customized, and additional components can be defined by the user. The worker is built up using “bootsteps” — a dependency graph enabling fine grained control of the worker’s internals.  
 
+
+## Framework Integration
+
+Celery is easy to integrate with web frameworks, some of which even have integration packages:  
+
+| Django | django-celery |
+| -- | -- |
+| Pyramid | pyramid_celery |
+| Pylons | celery-pylons |
+| Flask | not needed |
+| 0:5 | 1:5 |
+| 0:6 | 1:6 |
+
+	
+Pyramid	pyramid_celery
+	
+	not needed
+web2py	web2py-celery
+Tornado	tornado-celery
+
+The integration packages are not strictly necessary, but they can make development easier, and sometimes they add important hooks like closing database connections at fork(2).
