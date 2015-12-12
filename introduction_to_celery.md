@@ -105,11 +105,11 @@ If this is the first time you’re trying to use Celery, or you are new to Celer
 
 ## Features
 * Monitoring  
- A stream of monitoring events is emitted by workers and is used by built-in and external tools to tell you what your cluster is doing – in real-time.
+ A stream of monitoring events is emitted by workers and is used by built-in and external tools to tell you what your cluster is doing – in real-time.  
+ 
+ Read more….  
 
- Read more….
-
-* Workflows
+* Workflows  
 
  Simple and complex workflows can be composed using a set of powerful primitives we call the “canvas”, including grouping, chaining, chunking and more.
 
