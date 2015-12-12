@@ -17,4 +17,5 @@
    * What’s new in Celery 2.5
    * API Reference
    * Internals
+   * History
 
