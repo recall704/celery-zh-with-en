@@ -9,7 +9,10 @@
 * Quickjump
 * Installation
 
-What is a Task Queue?
+
+## What is a Task Queue?
+
+
 Task queues are used as a mechanism to distribute work across threads or machines.
 
 A task queue’s input is a unit of work called a task. Dedicated worker processes constantly monitor task queues for new work to perform.
@@ -20,7 +23,10 @@ A Celery system can consist of multiple workers and brokers, giving way to high 
 
 Celery is written in Python, but the protocol can be implemented in any language. So far there’s RCelery for the Ruby programming language, node-celery for Node.js and a PHP client. Language interoperability can also be achieved by using webhooks.
 
-What do I need?
+
+## What do I need?
+
+
 Version Requirements
 
 Celery version 3.0 runs on
@@ -34,12 +40,18 @@ Celery requires a message transport to send and receive messages. The RabbitMQ a
 
 Celery can run on a single machine, on multiple machines, or even across data centers.
 
-Get Started
+
+## Get Started
+
+
 If this is the first time you’re trying to use Celery, or you are new to Celery 3.0 coming from previous versions then you should read our getting started tutorials:
 
 First Steps with Celery
 Next Steps
-Celery is…
+
+## Celery is…
+
+
 Simple
 
 Celery is easy to use and maintain, and it doesn’t need configuration files.
