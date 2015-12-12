@@ -9,4 +9,5 @@
    * Django
    * Contributing
    * Community Resources
+   * Tutorials
 
