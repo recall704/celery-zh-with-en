@@ -133,7 +133,7 @@ $ celery help
 
 To call our task you can use the `delay()` method.
 
-This is a handy shortcut to the apply_async() method which gives greater control of the task execution (see Calling Tasks):
+This is a handy shortcut to the `apply_async()` method which gives greater control of the task execution (see Calling Tasks):
 
 >>> from tasks import add
 >>> add.delay(4, 4)
