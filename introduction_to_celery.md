@@ -88,6 +88,6 @@ If this is the first time you’re trying to use Celery, or you are new to Celer
 
 * Concurrency  
  prefork (multiprocessing),  
- Eventlet, gevent  
+ [Eventlet](http://eventlet.net/), [gevent](http://gevent.org/)  
  threads/single threaded  
 
