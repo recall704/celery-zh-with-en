@@ -9,23 +9,24 @@ In this tutorial you will learn the absolute basics of using Celery. You will le
 * Starting the worker and calling tasks.  
 * Keeping track of tasks as they transition through different states, and inspecting return values.  
 
-Celery may seem daunting at first - but don’t worry - this tutorial will get you started in no time. It is deliberately kept simple, so to not confuse you with advanced features. After you have finished this tutorial it’s a good idea to browse the rest of the documentation, for example the Next Steps tutorial, which will showcase Celery’s capabilities.
+Celery may seem daunting at first - but don’t worry - this tutorial will get you started in no time. It is deliberately kept simple, so to not confuse you with advanced features. After you have finished this tutorial it’s a good idea to browse the rest of the documentation, for example the [Next Steps](http://docs.celeryproject.org/en/latest/getting-started/next-steps.html#next-steps) tutorial, which will showcase Celery’s capabilities.
 
-Choosing a Broker
-RabbitMQ
-Redis
-Using a database
-Other brokers
-Installing Celery
-Application
-Running the celery worker server
-Calling the task
-Keeping Results
-Configuration
-Where to go from here
-Troubleshooting
-Worker does not start: Permission Error
-Result backend does not work or tasks are always in PENDING state.
+* Choosing a Broker  
+ * RabbitMQ  
+ * Redis  
+ * Using a database  
+ * Other brokers  
+* Installing Celery  
+* Application  
+* Running the celery worker server  
+* Calling the task  
+* Keeping Results  
+* Configuration  
+* Where to go from here  
+* Troubleshooting  
+ * Worker does not start: Permission Error  
+ * Result backend does not work or tasks are always in PENDING state.  
+
 Choosing a Broker
 Celery requires a solution to send and receive messages; usually this comes in the form of a separate service called a message broker.
 
