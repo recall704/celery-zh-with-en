@@ -281,3 +281,13 @@ The following bundles are available:
 
 ## Downloading and installing from source
 
+Download the latest version of Celery from [http://pypi.python.org/pypi/celery/](http://pypi.python.org/pypi/celery/)
+
+You can install it by doing the following,:
+```
+$ tar xvfz celery-0.0.0.tar.gz
+$ cd celery-0.0.0
+$ python setup.py build
+# python setup.py install
+```
+The last command must be executed as a privileged user if you are not currently using a virtualenv.
