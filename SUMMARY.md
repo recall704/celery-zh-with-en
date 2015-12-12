@@ -2,5 +2,5 @@
 
 * [Introduction](README.md)
 * [Celery](celery.md)
-* Contents
+* [Contents](contents.md)
 
