@@ -7,7 +7,7 @@
    * [Getting Started](getting_started.md)
        * [Introduction to Celery](introduction_to_celery.md)
            * [What is a Task Queue?](what_is_a_task_queue.md)
-           * What do I need?
+           * [What do I need?](what_do_i_need.md)
        * [Brokers](brokers.md)
            * Broker Instructions
            * Experimental Transports
