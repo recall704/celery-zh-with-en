@@ -62,8 +62,9 @@ And don’t worry if you’re not running Ubuntu or Debian, you can go to this w
 
 Using a database as a message queue is not recommended, but can be sufficient for very small installations. Your options include:
 
-Using SQLAlchemy
-Using the Django Database
+* Using SQLAlchemy  
+* Using the Django Database  
+
 If you’re already using a Django database for example, using it as your message broker can be convenient while developing even if you use a more robust system in production.
 
 
