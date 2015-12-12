@@ -15,4 +15,5 @@
    * What’s new in Celery 3.1 (Cipater)
    * What’s new in Celery 3.0 (Chiastic Slide)
    * What’s new in Celery 2.5
+   * API Reference
 
