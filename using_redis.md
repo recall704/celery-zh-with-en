@@ -51,16 +51,16 @@ For a complete list of options supported by the Redis result backend, see [Redis
 
 ## Caveats
 
-Broadcast messages will be seen by all virtual hosts by default.
+* Broadcast messages will be seen by all virtual hosts by default.
 
-You have to set a transport option to prefix the messages so that they will only be received by the active virtual host:
+ You have to set a transport option to prefix the messages so that they will only be received by the active virtual host:
 
-BROKER_TRANSPORT_OPTIONS = {'fanout_prefix': True}
-Note that you will not be able to communicate with workers running older versions or workers that does not have this setting enabled.
+ BROKER_TRANSPORT_OPTIONS = {'fanout_prefix': True}
+ Note that you will not be able to communicate with workers running older versions or workers that does not have this setting enabled.
 
-This setting will be the default in the future, so better to migrate sooner rather than later.
+ This setting will be the default in the future, so better to migrate sooner rather than later.
 
-Workers will receive all task related events by default.
+* Workers will receive all task related events by default.
 
 To avoid this you must set the fanout_patterns fanout option so that the workers may only subscribe to worker related events:
 
