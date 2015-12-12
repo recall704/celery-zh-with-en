@@ -14,3 +14,10 @@ You may share and adapt the material, even for commercial purposes, but you must
 
 > Note  
 While the Celery documentation is offered under the Creative Commons Attribution-ShareAlike 4.0 International license the Celery software is offered under the BSD License (3 Clause)
+
+
+# 版权
+
+*Celery 用户手册*
+Ask Solem 著
+版权所有 © 2009-2015, Ask Solem.
