@@ -6,6 +6,7 @@
    * [Getting Started](getting_started.md)
        * Introduction to Celery
        * Brokers
+       * First Steps with Celery
    * User Guide
    * Configuration and defaults
    * Django
