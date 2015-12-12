@@ -161,27 +161,37 @@ Or if you want to use Redis as the result backend, but still use RabbitMQ as the
 app = Celery('tasks', backend='redis://localhost', broker='amqp://')
 ```
 
-To read more about result backends please see Result Backends.
+To read more about result backends please see [Result Backends](http://docs.celeryproject.org/en/latest/userguide/tasks.html#task-result-backends).
 
-Now with the result backend configured, let’s call the task again. This time you’ll hold on to the AsyncResult instance returned when you call a task:
+Now with the result backend configured, let’s call the task again. This time you’ll hold on to the [AsyncResult](http://docs.celeryproject.org/en/latest/reference/celery.result.html#celery.result.AsyncResult) instance returned when you call a task:
 
+```
 >>> result = add.delay(4, 4)
-The ready() method returns whether the task has finished processing or not:
+```
+The `ready()` method returns whether the task has finished processing or not:
 
+```
 >>> result.ready()
 False
+```
 You can wait for the result to complete, but this is rarely used since it turns the asynchronous call into a synchronous one:
 
+```
 >>> result.get(timeout=1)
 8
+```
 In case the task raised an exception, get() will re-raise the exception, but you can override this by specifying the propagate argument:
 
+```
 >>> result.get(propagate=False)
+```
 If the task raised an exception you can also gain access to the original traceback:
 
+```
 >>> result.traceback
 …
-See celery.result for the complete result object reference.
+```
+See `celery.result` for the complete result object reference.
 
 
 ## Configuration
