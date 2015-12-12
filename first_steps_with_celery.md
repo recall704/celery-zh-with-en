@@ -242,6 +242,7 @@ CELERY_ACCEPT_CONTENT=['json']
 CELERY_TIMEZONE = 'Europe/Oslo'
 CELERY_ENABLE_UTC = True
 ```
+
 To verify that your configuration file works properly, and doesn’t contain any syntax errors, you can try to import it:
 
 $ python -m celeryconfig
