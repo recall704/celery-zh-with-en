@@ -15,3 +15,8 @@ This is comparison table of the different transports supports, more information 
 |SQLAlchemy  | Experimental  |  No  | No  |
 |Iron MQ     | 3rd party     |  No  | No  |
 
+Experimental brokers may be functional but they do not have dedicated maintainers.
+
+Missing monitor support means that the transport does not implement events, and as such Flower, celery events, celerymon and other event-based monitoring tools will not work.
+
+Remote control means the ability to inspect and manage workers at runtime using the celery inspect and celery control commands (and other tools using the remote control API).
