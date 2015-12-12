@@ -142,7 +142,7 @@ This is a handy shortcut to the `apply_async()` method which gives greater contr
 
 The task has now been processed by the worker you started earlier, and you can verify that by looking at the workers console output.
 
-Calling a task returns an AsyncResult instance, which can be used to check the state of the task, wait for the task to finish or get its return value (or if the task failed, the exception and traceback). But this isn’t enabled by default, and you have to configure Celery to use a result backend, which is detailed in the next section.
+Calling a task returns an [AsyncResult](http://docs.celeryproject.org/en/latest/reference/celery.result.html#celery.result.AsyncResult) instance, which can be used to check the state of the task, wait for the task to finish or get its return value (or if the task failed, the exception and traceback). But this isn’t enabled by default, and you have to configure Celery to use a result backend, which is detailed in the next section.
 
 
 ## Keeping Results
