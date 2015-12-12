@@ -238,12 +238,12 @@ $ pip install "celery[librabbitmq]"
 
 $ pip install "celery[librabbitmq,redis,auth,msgpack]"
 ```
-The following bundles are available:
-Serializers
-celery[auth]:	for using the auth serializer.
-celery[msgpack]:
- 	for using the msgpack serializer.
-celery[yaml]:	for using the yaml serializer.
+The following bundles are available:  
+**Serializers**  
+**celery[auth]:	**for using the auth serializer.
+**celery[msgpack]:**for using the msgpack serializer.
+**celery[yaml]:**	for using the yaml serializer.
+
 Concurrency
 celery[eventlet]:
  	for using the eventlet pool.
