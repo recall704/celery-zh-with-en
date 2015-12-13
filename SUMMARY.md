@@ -49,6 +49,7 @@
        * Routing Tasks
        * Monitoring and Management Guide
        * Security
+       * Optimizing
    * Configuration and defaults
    * Django
    * Contributing
