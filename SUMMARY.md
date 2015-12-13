@@ -39,6 +39,7 @@
            * [What to do now?](what_to_do_now.md)
        * [Resources](resources.md)
    * User Guide
+       * Application
    * Configuration and defaults
    * Django
    * Contributing
