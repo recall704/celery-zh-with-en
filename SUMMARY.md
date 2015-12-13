@@ -42,6 +42,7 @@
        * Application
        * Tasks
        * Calling Tasks
+       * Canvas: Designing Workflows
    * Configuration and defaults
    * Django
    * Contributing
