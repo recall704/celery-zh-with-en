@@ -29,6 +29,7 @@
            * [Broker Overview](broker_overview.md)
        * [First Steps with Celery](first_steps_with_celery.md)
        * [Next Steps](next_steps.md)
+           * Using Celery in your Application
        * Resources
    * User Guide
    * Configuration and defaults
