@@ -46,6 +46,7 @@
        * Workers Guide
        * Periodic Tasks
        * HTTP Callback Tasks (Webhooks)
+       * Routing Tasks
    * Configuration and defaults
    * Django
    * Contributing
