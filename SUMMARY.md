@@ -60,6 +60,6 @@
    * Tutorials
 * Indices and tables
    * [Index](indices_and_tables/index.md)
-   * Module Index
+   * [Module Index](indices_and_tables/module_index.md)
    * Search Page
 
