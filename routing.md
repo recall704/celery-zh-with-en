@@ -12,7 +12,7 @@ app.conf.update(
 )
 ```
 
-You can also specify the queue at runtime with the queue argument to apply_async:
+You can also specify the queue at runtime with the `queue` argument to `apply_async`:
 
 ```
 >>> from proj.tasks import add
