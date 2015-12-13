@@ -54,10 +54,10 @@ when you’re finished monitoring you can disable events again:
 $ celery -A proj control disable_events
 ```
 
-The celery status command also uses remote control commands and shows a list of online workers in the cluster:
+The **celery status** command also uses remote control commands and shows a list of online workers in the cluster:
 
 ```
 $ celery -A proj status
 ```
 
-You can read more about the celery command and monitoring in the Monitoring Guide.
+You can read more about the **celery** command and monitoring in the Monitoring Guide.
