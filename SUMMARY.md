@@ -35,7 +35,7 @@
            * [Routing](routing.md)
            * [Remote Control](remote_control.md)
            * [Timezone](timezone.md)
-           * Optimization
+           * [Optimization](optimization.md)
        * Resources
    * User Guide
    * Configuration and defaults
