@@ -3,7 +3,7 @@
 * [Introduction](README.md)
 * [Celery](celery.md)
 * [Contents](contents.md)
-   * [Copyright](contents/copyright.md)
+   * [Copyright](contents/copyrightmd.md)
    * Getting Started
        * Introduction to Celery
            * [What is a Task Queue?](what_is_a_task_queue.md)
