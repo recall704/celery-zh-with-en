@@ -59,4 +59,5 @@
    * Community Resources
    * Tutorials
 * Indices and tables
+   * Index
 
