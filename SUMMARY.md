@@ -36,7 +36,7 @@
            * [Remote Control](remote_control.md)
            * [Timezone](timezone.md)
            * [Optimization](optimization.md)
-           * What to do now?
+           * [What to do now?](what_to_do_now.md)
        * Resources
    * User Guide
    * Configuration and defaults
