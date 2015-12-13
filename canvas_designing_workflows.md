@@ -142,9 +142,15 @@ A chord is a group with a callback:
 
 A group chained to another task will be automatically converted to a chord:
 
+```
 >>> (group(add.s(i, i) for i in xrange(10)) | xsum.s())().get()
 90
+```
+
 Since these primitives are all of the subtask type they can be combined almost however you want, e.g:
 
+```
 >>> upload_document.s(file) | group(apply_filter.s() for filter in filters)
+```
+
 Be sure to read more about workflows in the Canvas user guide.
