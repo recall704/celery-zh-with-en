@@ -60,4 +60,5 @@
    * Tutorials
 * Indices and tables
    * Index
+   * Module Index
 
