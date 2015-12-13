@@ -57,11 +57,11 @@ Keyword arguments can also be added later, these are then merged with any existi
 
 As stated subtasks supports the calling API, which means that:
 
-* subtask.apply_async(args=(), kwargs={}, **options)
+* `subtask.apply_async(args=(), kwargs={}, **options)`
 
 Calls the subtask with optional partial arguments and partial keyword arguments. Also supports partial execution options.
 
-* subtask.delay(*args, **kwargs)
+* `subtask.delay(*args, **kwargs)`
 
 Star argument version of `apply_async`. Any arguments will be prepended to the arguments in the signature, and keyword arguments is merged with any existing keys.
 
@@ -77,12 +77,13 @@ So this all seems very useful, but what can you actually do with these? To get t
 
 The primitives are subtasks themselves, so that they can be combined in any number of ways to compose complex workflows.
 
-Note
+> Note  
 These examples retrieve results, so to try them out you need to configure a result backend. The example project above already does that (see the backend argument to Celery).
+
 Let’s look at some examples:
 
-Groups
-A group calls a list of tasks in parallel, and it returns a special result instance that lets you inspect the results as a group, and retrieve the return values in order.
+#### Groups  
+A [group](http://docs.celeryproject.org/en/latest/reference/celery.html#celery.group) calls a list of tasks in parallel, and it returns a special result instance that lets you inspect the results as a group, and retrieve the return values in order.
 
 >>> from celery import group
 >>> from proj.tasks import add
