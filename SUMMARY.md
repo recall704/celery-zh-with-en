@@ -59,7 +59,7 @@
    * Community Resources
    * Tutorials
 * Indices and tables
-   * Index
+   * [Index](indices_and_tables/index.md)
    * Module Index
    * Search Page
 
