@@ -41,6 +41,7 @@
    * User Guide
        * Application
        * Tasks
+       * Calling Tasks
    * Configuration and defaults
    * Django
    * Contributing
