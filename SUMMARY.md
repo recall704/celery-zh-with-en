@@ -44,6 +44,7 @@
        * Calling Tasks
        * Canvas: Designing Workflows
        * Workers Guide
+       * Periodic Tasks
    * Configuration and defaults
    * Django
    * Contributing
