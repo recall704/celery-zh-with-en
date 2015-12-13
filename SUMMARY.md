@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
 * [Celery](celery.md)
-* [Contents](contents.md)
+* Contents
    * [Copyright](copyright.md)
    * [Getting Started](getting_started.md)
        * [Introduction to Celery](introduction_to_celery.md)
