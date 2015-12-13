@@ -180,3 +180,12 @@ $ celery multi start w1 -A proj -l info --pidfile=/var/run/celery/%n.pid \
                                         --logfile=/var/log/celery/%n%I.log
 ```
 
+With the multi command you can start multiple workers, and there is a powerful command-line syntax to specify arguments for different workers too, e.g:
+
+```
+$ celery multi start 10 -A proj -l info -Q:1-3 images,video -Q:4,5 data \
+    -Q default -L:4,5 debug
+```
+
+For more examples see the `multi` module in the API reference.
+
