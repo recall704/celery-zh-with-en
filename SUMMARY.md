@@ -36,6 +36,7 @@
            * [Remote Control](remote_control.md)
            * [Timezone](timezone.md)
            * [Optimization](optimization.md)
+           * What to do now?
        * Resources
    * User Guide
    * Configuration and defaults
