@@ -15,7 +15,7 @@
 For discussions about the usage, development, and future of celery, please join the [celery-users](http://groups.google.com/group/celery-users/) mailing list.
 
 #### IRC
-Come chat with us on IRC. The #celery channel is located at the Freenode network.
+Come chat with us on IRC. The **#celery** channel is located at the Freenode network.
 
 #### Bug tracker
 If you have any suggestions, bug reports or annoyances please report them to our issue tracker at http://github.com/celery/celery/issues/
