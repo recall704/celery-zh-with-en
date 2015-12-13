@@ -30,6 +30,7 @@
        * [First Steps with Celery](first_steps_with_celery.md)
        * [Next Steps](next_steps.md)
            * [Using Celery in your Application](using_celery_in_your_application.md)
+           * Calling Tasks
        * Resources
    * User Guide
    * Configuration and defaults
