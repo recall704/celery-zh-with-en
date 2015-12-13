@@ -6,56 +6,75 @@ A subtask wraps the arguments and execution options of a single task invocation 
 
 You can create a subtask for the add task using the arguments (2, 2), and a countdown of 10 seconds like this:
 
+```
 >>> add.subtask((2, 2), countdown=10)
 tasks.add(2, 2)
+```
+
 There is also a shortcut using star arguments:
 
+```
 >>> add.s(2, 2)
 tasks.add(2, 2)
-And there’s that calling API again…
-Subtask instances also supports the calling API, which means that they have the delay and apply_async methods.
+```
+
+#### And there’s that calling API again…
+Subtask instances also supports the calling API, which means that they have the delay and `apply_async` methods.
 
 But there is a difference in that the subtask may already have an argument signature specified. The add task takes two arguments, so a subtask specifying two arguments would make a complete signature:
 
+```
 >>> s1 = add.s(2, 2)
 >>> res = s1.delay()
 >>> res.get()
 4
+```
+
 But, you can also make incomplete signatures to create what we call partials:
 
+```
 # incomplete partial: add(?, 2)
 >>> s2 = add.s(2)
+```
+
 s2 is now a partial subtask that needs another argument to be complete, and this can be resolved when calling the subtask:
 
+```
 # resolves the partial: add(8, 2)
 >>> res = s2.delay(8)
 >>> res.get()
 10
-Here you added the argument 8, which was prepended to the existing argument 2 forming a complete signature of add(8, 2).
+```
+
+Here you added the argument 8, which was prepended to the existing argument 2 forming a complete signature of `add(8, 2)`.
 
 Keyword arguments can also be added later, these are then merged with any existing keyword arguments, but with new arguments taking precedence:
 
+```
 >>> s3 = add.s(2, 2, debug=True)
 >>> s3.delay(debug=False)   # debug is now False.
+```
+
 As stated subtasks supports the calling API, which means that:
 
-subtask.apply_async(args=(), kwargs={}, **options)
+* subtask.apply_async(args=(), kwargs={}, **options)
 
 Calls the subtask with optional partial arguments and partial keyword arguments. Also supports partial execution options.
 
-subtask.delay(*args, **kwargs)
+* subtask.delay(*args, **kwargs)
 
-Star argument version of apply_async. Any arguments will be prepended to the arguments in the signature, and keyword arguments is merged with any existing keys.
+Star argument version of `apply_async`. Any arguments will be prepended to the arguments in the signature, and keyword arguments is merged with any existing keys.
 
 So this all seems very useful, but what can you actually do with these? To get to that I must introduce the canvas primitives…
 
-The Primitives
-group
-chain
-chord
-map
-starmap
-chunks
+#### The Primitives  
+* group  
+* chain  
+* chord  
+* map  
+* starmap  
+* chunks  
+
 The primitives are subtasks themselves, so that they can be combined in any number of ways to compose complex workflows.
 
 Note
