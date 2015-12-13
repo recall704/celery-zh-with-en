@@ -18,13 +18,13 @@ $ celery -A proj inspect active --destination=celery@example.com
 
 If a destination is not provided then every worker will act and reply to the request.
 
-The celery inspect command contains commands that does not change anything in the worker, it only replies information and statistics about what is going on inside the worker. For a list of inspect commands you can execute:
+The **celery inspect** command contains commands that does not change anything in the worker, it only replies information and statistics about what is going on inside the worker. For a list of inspect commands you can execute:
 
 ```
 $ celery -A proj inspect --help
 ```
 
-Then there is the celery control command, which contains commands that actually changes things in the worker at runtime:
+Then there is the **celery control** command, which contains commands that actually changes things in the worker at runtime:
 
 ```
 $ celery -A proj control --help
