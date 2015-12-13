@@ -61,5 +61,5 @@
 * Indices and tables
    * [Index](indices_and_tables/index.md)
    * [Module Index](indices_and_tables/module_index.md)
-   * Search Page
+   * [Search Page](indices_and_tables/search_page.md)
 
