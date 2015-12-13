@@ -32,7 +32,7 @@
            * [Using Celery in your Application](using_celery_in_your_application.md)
            * [Calling Tasks](calling_tasks.md)
            * [Canvas: Designing Workflows](canvas_designing_workflows.md)
-           * Routing
+           * [Routing](routing.md)
        * Resources
    * User Guide
    * Configuration and defaults
