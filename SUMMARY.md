@@ -45,6 +45,7 @@
        * Canvas: Designing Workflows
        * Workers Guide
        * Periodic Tasks
+       * HTTP Callback Tasks (Webhooks)
    * Configuration and defaults
    * Django
    * Contributing
