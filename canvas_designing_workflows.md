@@ -1,10 +1,10 @@
 # Canvas: Designing Workflows
 
-You just learned how to call a task using the tasks delay method, and this is often all you need, but sometimes you may want to pass the signature of a task invocation to another process or as an argument to another function, for this Celery uses something called subtasks.
+You just learned how to call a task using the tasks `delay` method, and this is often all you need, but sometimes you may want to pass the signature of a task invocation to another process or as an argument to another function, for this Celery uses something called subtasks.
 
 A subtask wraps the arguments and execution options of a single task invocation in a way such that it can be passed to functions or even serialized and sent across the wire.
 
-You can create a subtask for the add task using the arguments (2, 2), and a countdown of 10 seconds like this:
+You can create a subtask for the add task using the arguments `(2, 2)`, and a countdown of 10 seconds like this:
 
 ```
 >>> add.subtask((2, 2), countdown=10)
@@ -30,14 +30,14 @@ But there is a difference in that the subtask may already have an argument signa
 4
 ```
 
-But, you can also make incomplete signatures to create what we call partials:
+But, you can also make incomplete signatures to create what we call *partials*:
 
 ```
 # incomplete partial: add(?, 2)
 >>> s2 = add.s(2)
 ```
 
-s2 is now a partial subtask that needs another argument to be complete, and this can be resolved when calling the subtask:
+`s2` is now a partial subtask that needs another argument to be complete, and this can be resolved when calling the subtask:
 
 ```
 # resolves the partial: add(8, 2)
@@ -68,7 +68,7 @@ Star argument version of `apply_async`. Any arguments will be prepended to the a
 So this all seems very useful, but what can you actually do with these? To get to that I must introduce the canvas primitives…
 
 #### The Primitives  
-* group  
+* [group](http://docs.celeryproject.org/en/latest/userguide/canvas.html#canvas-group)  
 * chain  
 * chord  
 * map  
