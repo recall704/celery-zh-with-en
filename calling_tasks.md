@@ -54,6 +54,7 @@ d6b3aea2-fb9b-4ebc-8da4-848818db9114
 
 You can also inspect the exception and traceback if the task raised an exception, in fact `result.get()` will propagate any errors by default:
 
+```
 >>> res = add.delay(2)
 >>> res.get(timeout=1)
 Traceback (most recent call last):
@@ -63,36 +64,56 @@ File "/opt/devel/celery/celery/result.py", line 113, in get
 File "/opt/devel/celery/celery/backends/amqp.py", line 138, in wait_for
     raise meta['result']
 TypeError: add() takes exactly 2 arguments (1 given)
-If you don’t wish for the errors to propagate then you can disable that by passing the propagate argument:
+```
 
+If you don’t wish for the errors to propagate then you can disable that by passing the `propagate` argument:
+
+```
 >>> res.get(propagate=False)
 TypeError('add() takes exactly 2 arguments (1 given)',)
+```
+
 In this case it will return the exception instance raised instead, and so to check whether the task succeeded or failed you will have to use the corresponding methods on the result instance:
 
+```
 >>> res.failed()
 True
 
 >>> res.successful()
 False
-So how does it know if the task has failed or not? It can find out by looking at the tasks state:
+```
 
+So how does it know if the task has failed or not? It can find out by looking at the tasks *state*:
+
+```
 >>> res.state
 'FAILURE'
+```
+
 A task can only be in a single state, but it can progress through several states. The stages of a typical task can be:
 
+```
 PENDING -> STARTED -> SUCCESS
-The started state is a special state that is only recorded if the CELERY_TRACK_STARTED setting is enabled, or if the @task(track_started=True) option is set for the task.
+```
+
+The started state is a special state that is only recorded if the [CELERY_TRACK_STARTED](http://docs.celeryproject.org/en/latest/configuration.html#std:setting-CELERY_TRACK_STARTED) setting is enabled, or if the `@task(track_started=True)` option is set for the task.
 
 The pending state is actually not a recorded state, but rather the default state for any task id that is unknown, which you can see from this example:
 
+```
 >>> from proj.celery import app
 
 >>> res = app.AsyncResult('this-id-does-not-exist')
 >>> res.state
 'PENDING'
+```
+
 If the task is retried the stages can become even more complex, e.g, for a task that is retried two times the stages would be:
 
+```
 PENDING -> STARTED -> RETRY -> STARTED -> RETRY -> STARTED -> SUCCESS
-To read more about task states you should see the States section in the tasks user guide.
+```
 
-Calling tasks is described in detail in the Calling Guide.
+To read more about task states you should see the [States](http://docs.celeryproject.org/en/latest/userguide/tasks.html#task-states) section in the tasks user guide.
+
+Calling tasks is described in detail in the [Calling Guide](http://docs.celeryproject.org/en/latest/userguide/calling.html#guide-calling).
