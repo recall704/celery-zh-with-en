@@ -61,4 +61,5 @@
 * Indices and tables
    * Index
    * Module Index
+   * Search Page
 
