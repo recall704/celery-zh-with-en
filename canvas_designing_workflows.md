@@ -132,11 +132,14 @@ Chains can also be written like this:
 #### Chords
 A chord is a group with a callback:
 
+```
 >>> from celery import chord
 >>> from proj.tasks import add, xsum
 
 >>> chord((add.s(i, i) for i in xrange(10)), xsum.s())().get()
 90
+```
+
 A group chained to another task will be automatically converted to a chord:
 
 >>> (group(add.s(i, i) for i in xrange(10)) | xsum.s())().get()
