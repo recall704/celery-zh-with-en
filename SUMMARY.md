@@ -33,6 +33,7 @@
            * [Calling Tasks](calling_tasks.md)
            * [Canvas: Designing Workflows](canvas_designing_workflows.md)
            * [Routing](routing.md)
+           * Remote Control
        * Resources
    * User Guide
    * Configuration and defaults
