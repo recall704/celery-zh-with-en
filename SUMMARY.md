@@ -52,6 +52,7 @@
        * Optimizing
        * Concurrency
        * Signals
+       * Extensions and Bootsteps
    * Configuration and defaults
    * Django
    * Contributing
