@@ -34,7 +34,7 @@
            * [Canvas: Designing Workflows](canvas_designing_workflows.md)
            * [Routing](routing.md)
            * [Remote Control](remote_control.md)
-           * Timezone
+           * [Timezone](timezone.md)
        * Resources
    * User Guide
    * Configuration and defaults
