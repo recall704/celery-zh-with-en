@@ -27,26 +27,32 @@ Applying the task directly will execute the task in the current process, so that
 4
 ```
 
-These three methods - delay(), apply_async(), and applying (__call__), represents the Celery calling API, which are also used for subtasks.
+These three methods `- delay()`, `apply_async()`, and applying (`__call__`), represents the Celery calling API, which are also used for subtasks.
 
-A more detailed overview of the Calling API can be found in the Calling User Guide.
+A more detailed overview of the Calling API can be found in the [Calling User Guide](http://docs.celeryproject.org/en/latest/userguide/calling.html#guide-calling).
 
 Every task invocation will be given a unique identifier (an UUID), this is the task id.
 
-The delay and apply_async methods return an AsyncResult instance, which can be used to keep track of the tasks execution state. But for this you need to enable a result backend so that the state can be stored somewhere.
+The `delay` and `apply_async` methods return an [AsyncResult](http://docs.celeryproject.org/en/latest/reference/celery.result.html#celery.result.AsyncResult) instance, which can be used to keep track of the tasks execution state. But for this you need to enable a [result backend](http://docs.celeryproject.org/en/latest/userguide/tasks.html#task-result-backends) so that the state can be stored somewhere.
 
-Results are disabled by default because of the fact that there is no result backend that suits every application, so to choose one you need to consider the drawbacks of each individual backend. For many tasks keeping the return value isn’t even very useful, so it’s a sensible default to have. Also note that result backends are not used for monitoring tasks and workers, for that Celery uses dedicated event messages (see Monitoring and Management Guide).
+Results are disabled by default because of the fact that there is no result backend that suits every application, so to choose one you need to consider the drawbacks of each individual backend. For many tasks keeping the return value isn’t even very useful, so it’s a sensible default to have. Also note that result backends are not used for monitoring tasks and workers, for that Celery uses dedicated event messages (see [Monitoring and Management Guide](http://docs.celeryproject.org/en/latest/userguide/monitoring.html#guide-monitoring)).
 
 If you have a result backend configured you can retrieve the return value of a task:
 
+```
 >>> res = add.delay(2, 2)
 >>> res.get(timeout=1)
 4
+```
+
 You can find the task’s id by looking at the id attribute:
 
+```
 >>> res.id
 d6b3aea2-fb9b-4ebc-8da4-848818db9114
-You can also inspect the exception and traceback if the task raised an exception, in fact result.get() will propagate any errors by default:
+```
+
+You can also inspect the exception and traceback if the task raised an exception, in fact `result.get()` will propagate any errors by default:
 
 >>> res = add.delay(2)
 >>> res.get(timeout=1)
