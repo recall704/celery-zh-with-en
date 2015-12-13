@@ -69,16 +69,16 @@ So this all seems very useful, but what can you actually do with these? To get t
 
 #### The Primitives  
 * [group](http://docs.celeryproject.org/en/latest/userguide/canvas.html#canvas-group)  
-* chain  
-* chord  
-* map  
-* starmap  
-* chunks  
+* [chain](http://docs.celeryproject.org/en/latest/userguide/canvas.html#canvas-chain)  
+* [chord](http://docs.celeryproject.org/en/latest/userguide/canvas.html#canvas-chord)  
+* [map](http://docs.celeryproject.org/en/latest/userguide/canvas.html#canvas-map)  
+* [starmap](http://docs.celeryproject.org/en/latest/userguide/canvas.html#canvas-map)  
+* [chunks](http://docs.celeryproject.org/en/latest/userguide/canvas.html#canvas-chunks)  
 
 The primitives are subtasks themselves, so that they can be combined in any number of ways to compose complex workflows.
 
 > Note  
-These examples retrieve results, so to try them out you need to configure a result backend. The example project above already does that (see the backend argument to Celery).
+These examples retrieve results, so to try them out you need to configure a result backend. The example project above already does that (see the backend argument to [Celery](http://docs.celeryproject.org/en/latest/reference/celery.html#celery.Celery)).
 
 Let’s look at some examples:
 
@@ -153,4 +153,4 @@ Since these primitives are all of the subtask type they can be combined almost h
 >>> upload_document.s(file) | group(apply_filter.s() for filter in filters)
 ```
 
-Be sure to read more about workflows in the Canvas user guide.
+Be sure to read more about workflows in the [Canvas](http://docs.celeryproject.org/en/latest/userguide/canvas.html#guide-canvas) user guide.
