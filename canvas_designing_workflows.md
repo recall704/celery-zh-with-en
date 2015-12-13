@@ -101,26 +101,35 @@ Partial group
 [10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
 ```
 
-Chains
+#### Chains  
 Tasks can be linked together so that after one task returns the other is called:
 
+```
 >>> from celery import chain
 >>> from proj.tasks import add, mul
 
 # (4 + 4) * 8
 >>> chain(add.s(4, 4) | mul.s(8))().get()
 64
+```
+
 or a partial chain:
 
+```
 # (? + 4) * 8
 >>> g = chain(add.s(4) | mul.s(8))
 >>> g(4).get()
 64
+```
+
 Chains can also be written like this:
 
+```
 >>> (add.s(4, 4) | mul.s(8))().get()
 64
-Chords
+```
+
+#### Chords
 A chord is a group with a callback:
 
 >>> from celery import chord
