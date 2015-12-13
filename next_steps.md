@@ -46,19 +46,20 @@ if __name__ == '__main__':
 ```
 In this module you created our [Celery](http://docs.celeryproject.org/en/latest/reference/celery.html#celery.Celery) instance (sometimes referred to as the app). To use Celery within your project you simply import this instance.
 
-* The broker argument specifies the URL of the broker to use.
+* The `broker` argument specifies the URL of the broker to use.
 
  See [Choosing a Broker](http://docs.celeryproject.org/en/latest/getting-started/first-steps-with-celery.html#celerytut-broker) for more information.
 
-The backend argument specifies the result backend to use,
+* The `backend` argument specifies the result backend to use,
 
-It’s used to keep track of task state and results. While results are disabled by default I use the amqp result backend here because I demonstrate how retrieving results work later, you may want to use a different backend for your application. They all have different strengths and weaknesses. If you don’t need results it’s better to disable them. Results can also be disabled for individual tasks by setting the @task(ignore_result=True) option.
+ It’s used to keep track of task state and results. While results are disabled by default I use the amqp result backend here because I demonstrate how retrieving results work later, you may want to use a different backend for your application. They all have different strengths and weaknesses. If you don’t need results it’s better to disable them. Results can also be disabled for individual tasks by setting the `@task(ignore_result=True)` option.
 
-See Keeping Results for more information.
+ See [Keeping Results](http://docs.celeryproject.org/en/latest/getting-started/first-steps-with-celery.html#celerytut-keeping-results) for more information.
 
-The include argument is a list of modules to import when the worker starts. You need to add our tasks module here so that the worker is able to find our tasks.
+* The `include` argument is a list of modules to import when the worker starts. You need to add our tasks module here so that the worker is able to find our tasks.
 
 proj/tasks.py
+```
 from __future__ import absolute_import
 
 from proj.celery import app
@@ -77,3 +78,4 @@ def mul(x, y):
 @app.task
 def xsum(numbers):
     return sum(numbers)
+```
