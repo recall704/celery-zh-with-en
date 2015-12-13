@@ -51,6 +51,7 @@
        * Security
        * Optimizing
        * Concurrency
+       * Signals
    * Configuration and defaults
    * Django
    * Contributing
