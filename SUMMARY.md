@@ -40,6 +40,7 @@
        * [Resources](resources.md)
    * User Guide
        * Application
+       * Tasks
    * Configuration and defaults
    * Django
    * Contributing
